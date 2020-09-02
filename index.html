@@ -1,11 +1,12 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="Content-Securiry-Policy"
     content =
-  "default-src *; connect-src * ws://* wss://*; style-src * 'unsafe-inline' 'insafe-eval'; media-src * ; 
-  img-src * data:; font-src * 'unsafe-inline' 'unsafe-eval';">
+  "default-src *; connect-src * ws://* wss://*; style-src * 'unsafe-inline' 'unsafe-eval'; media-src * ; 
+  img-src * data:; font-src * ; script-src * 'unsafe-inline' 'unsafe-eval';">
   <title>Portfolio</title>
 </head>
 <body>
@@ -13,6 +14,6 @@
   <noscript>
     You need to enable Javascript to run this React application
   </noscript>
-  <script src="dist.bundle.js"></script>
+  <script src="dist/bundle.js"></script>
 </body>
 </html>
