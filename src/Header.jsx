@@ -1,5 +1,5 @@
 import React from "react";
-import { Navlink, Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,22 +9,22 @@ const Header = () => {
         My Portfolio
         </Link>
         <div className="right menu">
-          <Navlink
+          <NavLink
           id="about-tab"
           className="ui item"
           activeStyle={{ fontWeight: "bold"}}
           to="/about"
           >
             About Me
-          </Navlink>
-          <Navlink
+          </NavLink>
+          <NavLink
           id="projects-tab"
           className="ui item"
           activeStyle={{ fontWeight: "bold" }}
           to="/projects"
           >
             Projects
-          </Navlink>
+          </NavLink>
         </div>
       </div>
     </nav>

@@ -21,7 +21,7 @@ describe("User can navigate the app", () => {
       });
 
       it("does not display Hello world", () => {
-        cy.gett("#hello").should("not.exist");
+        cy.get("#hello").should("not.exist");
       });
     });
 
