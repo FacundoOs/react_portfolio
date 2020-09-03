@@ -6,6 +6,6 @@ const Hello = () => {
     <h1 id="hello">Hello World</h1>
     </div>
   );
-}
+};
 
 export default Hello;
