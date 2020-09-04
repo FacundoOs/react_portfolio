@@ -1,10 +1,21 @@
 [
   {
     "id": 1,
-    "name": "my First Website"
+    "name": "My First Website",
+    "image": "hftn://ww.apresident.ustwebsites/2000/2000w/gorentlehome.gif",
+    "description": "This was my first project. The guy lost, but won the popular vote!" 
   },
   {
     "id": 2,
-    "name": "FizzBuzz"
+    "name": "UI Design",
+    "image": "https://images.unsplash.com/photo-1522502.550221-31fdln.575a2d7ixlib=rb-1.2.16ixideyJhOlgfaW0i0j4MDdgEautoformat&fit=crop&u,19506q=00",
+    "description": "This was my first project. The guy lost, but won the popular vote!" 
+  },
+  {
+    "id": 1,
+    "name": "Mobile UX",
+    "image": "hftn://ww.apresident.ustwebsites/2000/2000w/gorentlehome.gif",
+    "description": "This was my first project. The guy lost, but won the popular vote!" 
   }
 ]
+
