@@ -21,7 +21,7 @@ it("displays second project", () => {
   cy.get(".ui.header").should("contain", "UI Design"); 
   cy.get(".description").should(
      "contain", 
-     "Designing user interfaces is fun. I want to learn more about that..." 
+     "This was my first project. The guy lost, but won the popular vote!" 
     );
   });
 }); 

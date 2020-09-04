@@ -37,7 +37,7 @@ class Projects extends Component {
           <UndrawDashboard primaryColor='#12283a' height='200px' />
         </div>
       <div className="column">
-        <h1 className="ui header">My Projects</h1>
+        <h1 id="projects-header" className="ui header">My Projects</h1>
         <p>
          dfsdjcnkasj weijf iojsefkl noi qen idfio3  oisdjfckjsndc kjlaneflkdnaed iojqodnasd ajnsdjqoied
          adsfjbasdbjasd hjbajdbask jhkabskdjbnakjsd jkadbnkjd.
