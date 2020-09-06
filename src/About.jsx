@@ -13,9 +13,9 @@ const About = () => {
             About Me
           </h1>
           <p>
-            Ipsum dolor dolorem consectetur est velit fugiat. Dolorem providet
-            corporis fuga distinctio ipsam? Et quos harum exceptuari dolorum
-            molestias?
+          More than 11 years of work experience in technical areas. As a technician and as a manager. 
+        I excel at conflict resolution, continuous improvement, planning, strategy, time reduction, 
+        and waste. Where there are obstacles and problems, I see opportunities. Always in constant learning.
           </p>
         </div>
       </div>

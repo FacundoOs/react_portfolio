@@ -1,18 +1,21 @@
 [
   {
     "id": 1,
-    "job_experience": "adawd"
+    "title": "job_experience",
+    "date": "Aug 2019 – Jun 2020",
+    "position": "Repair partner",
+    "description": "Repairs Operations Procedures & Strategy. Support operational leadership (Warehouse Managers) given to several Warehouses in Finland, Norway and Sweden. KPIs and OKRs tracking and achievement. Temporary Warehouse Manager in Stockholm and Oslo. Qualitative and Quantitative data analysis (Tableau, Google Sheets). Creation and implementation of strategies and Standard Operation Procedures (SOP) to improve the quality and performance levels. Project Management & Application Development Analysis. Implementation of Agile and Lean Methodology (Kanban, Jira, Confluence)"
   },
   {
     "id": 2,
-    "job_experience": "adawd"
-  },
+    "title": "job_experience",
+    "date": "Apr 2019 – Jul 2019",
+    "position": "Repair Station Leader",
+    "description": "In charge of the hard fix area, personal management and teaching, implementation and development of new processes, stock management, inter-area organization, search for better repair methods, logistics"},
   {
     "id": 3,
-    "education": "ada232wd"
-  },
-  {
-    "id": 4,
-    "education": "adawd"
-  }
+    "title": "job_experience",
+    "date": "Oct 2015 – Mar 2017",
+    "position": "Production manager",
+    "description": "Mobile repair level 3 (Samsung, Lenovo, Huawei, Motorola)"}
 ]
