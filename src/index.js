@@ -6,18 +6,20 @@ import Footer from "./Footer";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Projects from "./Projects";
 import About from "./About";
+import Cv from "./Cv";
 
 const App = () => {
   return (
-  <>
-  <Header />
-  <Switch>
-    <Route exact path="/" component={Hello}></Route>
-    <Route exact path="/about" component={About}></Route>
-    <Route exact path="/projects" component={Projects}></Route>
-  </Switch>
-  <Footer />
-  </>
+    <>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Hello}></Route>
+        <Route exact path="/about" component={About}></Route>
+        <Route exact path="/projects" component={Projects}></Route>
+        <Route exact path="/cv" component={Cv}></Route>
+      </Switch>
+      <Footer />
+    </>
   );
 };
 
