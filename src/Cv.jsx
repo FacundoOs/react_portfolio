@@ -21,11 +21,11 @@ class Cv extends Component {
     if (curriculum.length > 0) {
       cvList = curriculum.map((curriculum_vitae) => {
         return (
-          <div>
+          <div class="cv_tab">
           <div id={"project-" + curriculum_vitae.id} key={curriculum_vitae.id}>
             <div class="ui relaxed divided list">
               <div class="item">
-                <i class="large github middle aligned icon"></i>
+                <i class="large hand point right middle aligned icon"></i>
                 <div class="content">
                   <div class="description">{curriculum_vitae.date}</div>
                   <div class="description"><h2>{curriculum_vitae.position}</h2></div>
@@ -43,11 +43,10 @@ class Cv extends Component {
       });
     }
     return (
-      <div className="ui">
-        <h1 id="cv-header" className="ui header">
-          My CV
+      <div className="ui" class="cv_tab">
+        <h1 id="cv-header" className="ui header" class="title_cv">
+        Job experience
         </h1>
-        <h1>Job experience</h1>
         {cvList}
       </div>
     );

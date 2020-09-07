@@ -2,7 +2,7 @@ import React from "react";
 
 const Hello = () => {
   return (
-    <div className="ui main container two column grid">
+    <div className="ui main container two column grid background_code">
       <div>
         <img
           class="ui medium wide column circular image"
