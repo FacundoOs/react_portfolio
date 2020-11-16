@@ -14,14 +14,15 @@ const App = () => {
     <>
       {/* <Header /> */}
        <Navbar/>
-      <Switch>
-        {/* <Route exact path="/home" component={Home}></Route> */}
+       <Header/>
+      {/* <Switch>
+        <Route exact path="/home" component={Home}></Route>
         <Route exact path="/" component={Hello}></Route>
         <Route exact path="/" component={MainPage}></Route>
         <Route exact path="/about" component={About}></Route>
         <Route exact path="/projects" component={Projects}></Route>
         <Route exact path="/cv" component={Cv}></Route>
-      </Switch>
+      </Switch> */}
       <Footer />
     </>
   );

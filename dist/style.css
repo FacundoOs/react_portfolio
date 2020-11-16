@@ -1,3 +1,7 @@
+body {
+  background: url(../src/assets/background.jpeg) no-repeat center fixed;
+}
+
 footer {
   position: fixed;
   bottom: 0;

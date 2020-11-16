@@ -1,5 +1,5 @@
 import React from "react";
-import { UndrawAlienScience } from "react-undraw-illustrations";
+// import { UndrawAlienScience } from "react-undraw-illustrations";
 
 const About = () => {
   return (

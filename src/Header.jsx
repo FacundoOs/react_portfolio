@@ -1,43 +1,56 @@
+//rafce
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { Typography, Avatar, Grid, Box } from "@material-ui/core";
+import avatar from "./assets/personal_avatar.jpg";
+import Typed from "react-typed";
+import { makeStyles } from "@material-ui/core/styles";
 
 const Header = () => {
+  const classes = useStyles();
   return (
-    <nav className="ui fixed inverted menu">
-      <div className="ui container">
-        <Link id="header" className="header item" to="/">
-          My Portfolio
-        </Link>
-        <div className="right menu">
-          <NavLink
-            id="about-tab"
-            className="ui item"
-            activeStyle={{ fontWeight: "bold" }}
-            to="/about"
-          >
-            About Me
-          </NavLink>
-          <NavLink
-            id="projects-tab"
-            className="ui item"
-            activeStyle={{ fontWeight: "bold" }}
-            to="/projects"
-          >
-            Projects
-          </NavLink>
-          <NavLink
-            id="cv-tab"
-            className="ui item"
-            activeStyle={{ fontWeight: "bold" }}
-            to="/cv"
-        
-          >
-            CV
-          </NavLink>
-        </div>
-      </div>
-    </nav>
+    <Box className={classes.typedContainer}>
+      <Grid container justify="center">
+
+      <Avatar className={classes.avatar} src={avatar} alt="avatar-picture" />
+      </Grid>
+      <Typography className={classes.title} variant="h4">
+        <Typed strings={["Facundo Osores"]} typeSpeed={40} />
+      </Typography>
+      <br />
+      <Typography className={classes.subtitle} variant="h5">
+        <Typed
+          strings={["Web Design", "Web Development", "Full Stack Developer"]}
+          typeSpeed={40}
+          backSpeed={60}
+          loop
+        />
+      </Typography>
+    </Box>
   );
 };
 
 export default Header;
+
+const useStyles = makeStyles((theme) => ({
+  avatar: {
+    width: theme.spacing(15),
+    height: theme.spacing(15),
+    margin: theme.spacing(1),
+  },
+  title: {
+    color: "tomato",
+  },
+  subtitle: {
+    color: "tan",
+    marginBottom: "3rem",
+  },
+  typedContainer: {
+    position: "absoute", 
+    top: "50%",
+    left: "50%",
+    // transform: "translate(50%, 50%)",
+    width: "100vw",
+    textAlign: "center",
+    zIndex: 1,
+  },
+}));
