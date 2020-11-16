@@ -16,7 +16,16 @@ module.exports = {
     {
       test: /\.css$/,
       use: ["style-loader", "css-loader"],
-    },
+    }, 			{
+      test: /\.(jpg|jpeg|png|gif|mp3|svg|ttf|woff2|woff|eot)$/gi,
+      use: {
+        loader: "file-loader",
+        options: {
+          name: "[name].[hash].[ext]",
+          outputPath: "assets/imgs"
+        }
+      }
+    }
     ],
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },

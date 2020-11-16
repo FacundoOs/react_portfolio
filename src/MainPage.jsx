@@ -1,21 +1,17 @@
-import React from 'react'
+import React from "react";
+import Grid from '@material-ui/core/Grid'
 
-const Home = () => {
+const MainPage = () => {
   return (
-    <div class="ui three column centered grid">
-        <div class="row">
-      <h1>Facundo Osores</h1>
-      </div>
-      <div></div>
-        <div class="row">
-      <h2>Front End Developer</h2>
-      </div>
-        <div class="row">
-      <h4>Creative, revolutionary, passionate</h4>
-      </div>
+    <Grid container spacing={2}> 
+    <Grid item xs={6}> </Grid>
+    <Grid item xs={6}>
+        <h1>Facundo Osores</h1>
+        <h2>Junior Front End Developer2222</h2>
+        <h4>Creative, revolutionary, passionate</h4>
+    </Grid>
+    </Grid>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Home
+export default MainPage;
