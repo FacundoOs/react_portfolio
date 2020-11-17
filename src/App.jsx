@@ -3,19 +3,20 @@ import Hello from "./Hello";
 import Home from './Home'
 import Footer from "./Footer";
 import { Switch, Route} from "react-router-dom";
-import Projects from "./Projects";
 import About from "./About";
 import Cv from "./Cv";
 import MainPage from "./MainPage";
 import Navbar from './Navbar'
 import Particles from 'react-particles-js'
 import {makeStyles} from '@material-ui/core/styles'
+import ProjectsList from "./ProjectsList";
 
 const App = () => {
   const classes = useStyles()
   return (
     <>
       <Navbar/>
+      {/* <PostCardDemo/> */}
     
       <Particles
       canvasClassName={classes.particlesCanva}
@@ -63,11 +64,11 @@ const App = () => {
       }
       }}/>
       <Switch>
+        <Route exact path="/projects" component={ProjectsList}></Route>
         <Route exact path="/" component={Home}></Route>
         {/* <Route exact path="/" component={Hello}></Route> */}
         {/* <Route exact path="/" component={MainPage}></Route> */}
         {/* <Route exact path="/about" component={About}></Route> */}
-        <Route exact path="/projects" component={Projects}></Route>
         <Route exact path="/cv" component={Cv}></Route>
       </Switch>
       <Footer />
