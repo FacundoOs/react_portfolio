@@ -1,14 +1,15 @@
 import React from "react";
 import cx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
-import Avatar from "@material-ui/core/Avatar";
-import Box from "@material-ui/core/Box";
-import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
-import CardContent from "@material-ui/core/CardContent";
-import IconButton from "@material-ui/core/IconButton";
-import FavoriteBorderRounded from "@material-ui/icons/FavoriteBorderRounded";
-import Share from "@material-ui/icons/Share";
+import {
+  IconButton,
+  CardContent,
+  CardMedia,
+  Card,
+  Box,
+  Avatar,
+} from "@material-ui/core/";
+import { GitHub, Share } from "@material-ui/icons/";
 import { useSoftRiseShadowStyles } from "@mui-treasury/styles/shadow/softRise";
 import { useSlopeCardMediaStyles } from "@mui-treasury/styles/cardMedia/slope";
 import { useN01TextInfoContentStyles } from "@mui-treasury/styles/textInfoContent/n01";
@@ -49,7 +50,8 @@ const ProjectCard = ({ projects }) => {
   return (
     <Card className={cx(cardStyles.root, shadowStyles.root)}>
       <CardMedia classes={mediaStyles} image={projects.image} />
-      <Avatar className={cardStyles.avatar} src={"https://i.pravatar.cc/300"} />
+      <Avatar className={cardStyles.avatar} src={"src/assets/undraw_programming_2svr.png"} />
+      {/* <Avatar className={cardStyles.avatar} src={"https://i.pravatar.cc/300"} /> */}
       <CardContent className={cardStyles.content}>
         <TextInfoContent
           classes={textCardContentStyles}
@@ -59,11 +61,11 @@ const ProjectCard = ({ projects }) => {
       </CardContent>
       <Box px={2} pb={2} mt={-1}>
         <a target="_blank" href={projects.link}>
-          <IconButton>
+          <IconButton color="secondary">
             <Share />
           </IconButton>
-          <IconButton>
-            <FavoriteBorderRounded />
+          <IconButton color="secondary">
+            <GitHub />
           </IconButton>
         </a>
       </Box>

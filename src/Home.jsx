@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(4),
   },
   title: {
-    color: "tomato",
+    color: "white",
   },
   subtitle: {
     color: "tan",

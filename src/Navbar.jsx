@@ -13,6 +13,7 @@ import {
   ListItemText,
 } from "@material-ui/core";
 import {
+  Home,
   Apps,
   ArrowBack,
   AssignmentInd,
@@ -53,8 +54,8 @@ const Navbar = () => {
   );
   return (
     <>
-      <Box component="nav">
-        <AppBar position="static">
+      <Box component="nav" >
+        <AppBar position="static" className={classes.appBar}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
               <ArrowBack />
@@ -77,7 +78,7 @@ export default Navbar;
 
 const menuItems = [
   {
-    listIcon: <AssignmentInd />,
+    listIcon: <Home />,
     listText: "Home",
     listPath: "/",
   },
@@ -108,4 +109,7 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(13),
     height: theme.spacing(13),
   },
+  appBar: {
+    background: "#4B6EC5"
+    }
 }));
