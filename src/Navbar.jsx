@@ -18,9 +18,10 @@ import {
   AssignmentInd,
   ContactMail,
 } from "@material-ui/icons";
-import avatar from "./assets/personal_avatar.jpg";
+import avatar from "./assets/avatar.png";
 import { makeStyles } from "@material-ui/core/styles";
-import MobilRightMenuSlider from '@material-ui/core/Drawer'
+import MobilRightMenuSlider from "@material-ui/core/Drawer";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [state, setState] = useState({
@@ -33,12 +34,16 @@ const Navbar = () => {
   const classes = useStyles();
 
   const sideList = (slider) => (
-    <Box className={classes.menuSliderContainer} component="div" onClick={toggleSlider(slider, false)}>
+    <Box
+      className={classes.menuSliderContainer}
+      component="div"
+      onClick={toggleSlider(slider, false)}
+    >
       <Avatar className={classes.avatar} src={avatar} alt="avatar-picture" />
       <Divider />
       <List>
         {menuItems.map((listItem, key) => (
-          <ListItem button key={key}>
+          <ListItem button key={key} component={Link} to={listItem.listPath}>
             <ListItemIcon>{listItem.listIcon}</ListItemIcon>
             <ListItemText primary={listItem.listText}></ListItemText>
           </ListItem>
@@ -55,7 +60,11 @@ const Navbar = () => {
               <ArrowBack />
             </IconButton>
             <Typography variant="h5">Portfolio</Typography>
-            <MobilRightMenuSlider anchor="right" open={state.right} onClose={toggleSlider("right", false)}>
+            <MobilRightMenuSlider
+              anchor="right"
+              open={state.right}
+              onClose={toggleSlider("right", false)}
+            >
               {sideList("right")}
             </MobilRightMenuSlider>
           </Toolbar>
@@ -70,6 +79,8 @@ const menuItems = [
   {
     listIcon: <AssignmentInd />,
     listText: "Home",
+    listPath: "/"
+
   },
   {
     listIcon: <AssignmentInd />,
@@ -78,6 +89,7 @@ const menuItems = [
   {
     listIcon: <Apps />,
     listText: "Portfolio",
+    listPath: "/projects"
   },
   {
     listIcon: <ContactMail />,

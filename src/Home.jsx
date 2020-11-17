@@ -1,11 +1,11 @@
 //rafce
 import React from "react";
 import { Typography, Avatar, Grid, Box } from "@material-ui/core";
-import avatar from "./assets/personal_avatar.jpg";
+import avatar from "./assets/avatar.png";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 
-const Header = () => {
+const Home = () => {
   const classes = useStyles();
   return (
     <Box className={classes.typedContainer}>
@@ -13,11 +13,11 @@ const Header = () => {
 
       <Avatar className={classes.avatar} src={avatar} alt="avatar-picture" />
       </Grid>
-      <Typography className={classes.title} variant="h4">
+      <Typography className={classes.title} variant="h2">
         <Typed strings={["Facundo Osores"]} typeSpeed={40} />
       </Typography>
       <br />
-      <Typography className={classes.subtitle} variant="h5">
+      <Typography className={classes.subtitle} variant="h4">
         <Typed
           strings={["Web Design", "Web Development", "Full Stack Developer"]}
           typeSpeed={40}
@@ -29,13 +29,13 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Home;
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
-    margin: theme.spacing(1),
+    width: theme.spacing(45),
+    height: theme.spacing(45),
+    margin: theme.spacing(4),
   },
   title: {
     color: "tomato",

@@ -13,19 +13,20 @@ module.exports = {
         loader: "babel-loader",
         options: { presets: ["@babel/env"] },
       },
-    {
-      test: /\.css$/,
-      use: ["style-loader", "css-loader"],
-    }, 			{
-      test: /\.(jpg|jpeg|png|gif|mp3|svg|ttf|woff2|woff|eot)$/gi,
-      use: {
-        loader: "file-loader",
-        options: {
-          name: "[name].[hash].[ext]",
-          outputPath: "assets/imgs"
-        }
-      }
-    }
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[hash].[ext]",
+            outputPath: "assets/",
+          },
+        },
+      },
     ],
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
