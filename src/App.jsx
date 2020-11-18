@@ -10,6 +10,7 @@ import Navbar from "./Navbar";
 import Particles from "react-particles-js";
 import { makeStyles } from "@material-ui/core/styles";
 import ProjectsList from "./ProjectsList";
+import Contact from './Contact'
 
 const App = () => {
   const classes = useStyles();
@@ -66,10 +67,10 @@ const App = () => {
       <Switch>
         <Route exact path="/projects" component={ProjectsList}></Route>
         <Route exact path="/" component={Home}></Route>
-        {/* <Route exact path="/" component={Hello}></Route> */}
+        <Route exact path="/contact" component={Contact}></Route>
         {/* <Route exact path="/" component={MainPage}></Route> */}
         {/* <Route exact path="/about" component={About}></Route> */}
-        <Route exact path="/cv" component={Cv}></Route>
+        <Route exact path="/Resume" component={Cv}></Route>
       </Switch>
       <Footer />
     </>

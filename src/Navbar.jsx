@@ -15,7 +15,7 @@ import {
 import {
   Home,
   Apps,
-  ArrowBack,
+  Menu,
   AssignmentInd,
   ContactMail,
 } from "@material-ui/icons";
@@ -23,6 +23,7 @@ import avatar from "./assets/avatar.png";
 import { makeStyles } from "@material-ui/core/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
 import { Link } from "react-router-dom";
+import FooterIcons from './FooterIcons'
 
 const Navbar = () => {
   const [state, setState] = useState({
@@ -58,15 +59,16 @@ const Navbar = () => {
         <AppBar position="static" className={classes.appBar}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
-              <ArrowBack />
+              <Menu />
             </IconButton>
             <Typography variant="h5">Portfolio</Typography>
             <MobilRightMenuSlider
-              anchor="right"
+              anchor="left"
               open={state.right}
               onClose={toggleSlider("right", false)}
             >
               {sideList("right")}
+              <FooterIcons />
             </MobilRightMenuSlider>
           </Toolbar>
         </AppBar>
@@ -85,6 +87,8 @@ const menuItems = [
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
+    listPath: "/resume",
+
   },
   {
     listIcon: <Apps />,
@@ -93,7 +97,8 @@ const menuItems = [
   },
   {
     listIcon: <ContactMail />,
-    listText: "Contacts",
+    listText: "Contact",
+    listPath: "/contact",
   },
 ];
 

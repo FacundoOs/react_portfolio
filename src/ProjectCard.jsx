@@ -36,7 +36,6 @@ const useStyles = makeStyles(() => ({
 }));
 
 const ProjectCard = ({ projects }) => {
-  debugger;
   // React.memo(function PostCard() {
   const cardStyles = useStyles();
   const mediaStyles = useSlopeCardMediaStyles();
