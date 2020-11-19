@@ -17,6 +17,7 @@
     "@mui-treasury/components": "^1.9.1",
     "@mui-treasury/layout": "^4.5.0",
     "axios": "^0.20.0",
+    "emailjs-com": "^2.6.4",
     "loader": "^2.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
