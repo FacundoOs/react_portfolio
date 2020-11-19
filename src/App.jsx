@@ -82,5 +82,7 @@ export default App;
 const useStyles = makeStyles({
   particlesCanva: {
     position: "absolute",
+    top: 0,
+    left: 0
   },
 });

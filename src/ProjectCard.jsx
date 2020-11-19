@@ -36,21 +36,15 @@ const useStyles = makeStyles(() => ({
 }));
 
 const ProjectCard = ({ projects }) => {
-  // React.memo(function PostCard() {
   const cardStyles = useStyles();
   const mediaStyles = useSlopeCardMediaStyles();
   const shadowStyles = useSoftRiseShadowStyles();
   const textCardContentStyles = useN01TextInfoContentStyles();
 
-  // const handleClick = () => {
-  //   window.location.href="https://stackoverflow.com/questions/41080481/in-reactjs-how-to-invoke-link-click-via-button-press";
-
-  // }
   return (
-    <Card className={cx(cardStyles.root, shadowStyles.root)}>
+    <Card className={cx(cardStyles.root, shadowStyles.root)} >
       <CardMedia classes={mediaStyles} image={projects.image} />
       <Avatar className={cardStyles.avatar} src={"src/assets/undraw_programming_2svr.png"} />
-      {/* <Avatar className={cardStyles.avatar} src={"https://i.pravatar.cc/300"} /> */}
       <CardContent className={cardStyles.content}>
         <TextInfoContent
           classes={textCardContentStyles}

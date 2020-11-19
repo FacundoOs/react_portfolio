@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <Grid container justify="center">
       <Box component="form" className={classes.form} onSubmit={sendEmail}>
-        <Typography variant="h2">Contact Me!!!</Typography>
+        <Typography variant="h2" className={classes.title}>Contact Me!</Typography>
         <MyTextField
           id="name"
           name="name"
@@ -111,6 +111,11 @@ const MyTextField = withStyles({
 })(TextField);
 
 const useStyle = makeStyles((theme) => ({
+  title: {
+    '@media (max-width:450px)': {
+      fontSize: '1.5rem',
+    }
+  },
   form: {
     top: "50%",
     left: "50%",
@@ -127,5 +132,8 @@ const useStyle = makeStyles((theme) => ({
     color: "#F1810E",
     borderColor: "#F1810E",
     fontSize: "1.5rem",
+    '@media (max-width:450px)': {
+      fontSize: '1rem',
+    },
   },
 }));

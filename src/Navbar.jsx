@@ -23,7 +23,7 @@ import avatar from "./assets/avatar.png";
 import { makeStyles } from "@material-ui/core/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
 import { Link } from "react-router-dom";
-import FooterIcons from './FooterIcons'
+import FooterIcons from "./FooterIcons";
 
 const Navbar = () => {
   const [state, setState] = useState({
@@ -46,8 +46,13 @@ const Navbar = () => {
       <List>
         {menuItems.map((listItem, key) => (
           <ListItem button key={key} component={Link} to={listItem.listPath}>
-            <ListItemIcon>{listItem.listIcon}</ListItemIcon>
-            <ListItemText primary={listItem.listText}></ListItemText>
+            <ListItemIcon className={classes.list}>
+              {listItem.listIcon}
+            </ListItemIcon>
+            <ListItemText
+              primary={listItem.listText}
+              className={classes.list}
+            ></ListItemText>
           </ListItem>
         ))}
       </List>
@@ -55,7 +60,7 @@ const Navbar = () => {
   );
   return (
     <>
-      <Box component="nav" >
+      <Box component="nav">
         <AppBar position="fixed" className={classes.appBar}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
@@ -88,7 +93,6 @@ const menuItems = [
     listIcon: <AssignmentInd />,
     listText: "Resume",
     listPath: "/resume",
-
   },
   {
     listIcon: <Apps />,
@@ -107,6 +111,10 @@ const useStyles = makeStyles((theme) => ({
     width: 250,
     background: "#222",
     height: "100%",
+    ":hover": {
+      background: "orange",
+      fontSize: "2rem",
+    },
   },
   avatar: {
     display: "block",
@@ -115,6 +123,9 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(13),
   },
   appBar: {
-    background: "#4B6EC5"
-    }
+    background: "#4B6EC5",
+  },
+  list: {
+    color: "#4B6EC5",
+  },
 }));
