@@ -1,4 +1,3 @@
-//rafce
 import React from "react";
 import {
   Typography,
@@ -10,7 +9,7 @@ import {
 } from "@material-ui/core";
 import avatar from "./assets/avatar.png";
 import Typed from "react-typed";
-import { makeStyles, responsiveFontSizes } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import react from "./assets/react.png";
 import reactNative from "./assets/images.png";
 import ruby from "./assets/ruby.jpeg";
@@ -22,7 +21,7 @@ import js from "./assets/js.jpg";
 import css from "./assets/css.png";
 import withWidth, { isWidthUp } from "@material-ui/core/withWidth";
 
-const Home = () => {
+const Home = (props) => {
   const classes = useStyles();
   const icons = [react, reactNative, ruby, rails, cy, rspec, html, js, css];
 
@@ -31,16 +30,16 @@ const Home = () => {
       return 9;
     }
     if (isWidthUp("md", props.width)) {
-      return 5;
+      return 9;
     }
     if (isWidthUp("xs", props.width)) {
-      return 3;
+      return 6;
     }
     return 1;
   };
 
   return (
-    <Box className={classes.typedContainer} p={7}>
+    <Box className={classes.root}>
       <Grid container justify="center">
         <Avatar className={classes.avatar} src={avatar} alt="avatar-picture" />
       </Grid>
@@ -56,18 +55,15 @@ const Home = () => {
           loop
         />
       </Typography>
-
-      <div className={classes.root}>
-        <GridList className={classes.gridList} cols={getGridListCols}>
-          {icons.map((icon) => {
-            return (
-              <GridListTile key={icon} className={classes.iconList}>
-                <Avatar alt="icon" src={icon} className={classes.iconAvatar}/>
-              </GridListTile>
-            );
-          })}
-        </GridList>
-      </div>
+      <GridList className={classes.gridList} cols={getGridListCols()} id="algo">
+        {icons.map((icon) => {
+          return (
+            <GridListTile key={icon} className={classes.iconList}>
+              <Avatar alt="icon" src={icon} className={classes.iconAvatar} />
+            </GridListTile>
+          );
+        })}
+      </GridList>
     </Box>
   );
 };
@@ -75,6 +71,15 @@ const Home = () => {
 export default withWidth()(Home);
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    position: "absoute",
+    top: "50%",
+    left: "50%",
+    width: "100vw",
+    textAlign: "center",
+    zIndex: 1,
+    margin: "5rem 0",
+  },
   avatar: {
     width: theme.spacing(35),
     height: theme.spacing(35),
@@ -98,27 +103,13 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "1.5rem",
     },
   },
-  typedContainer: {
-    position: "absoute",
-    top: "50%",
-    left: "50%",
-    width: "100vw",
-    textAlign: "center",
-    zIndex: 1,
-    marginTop: 30,
-  },
-  root: {
-    // display: 'flex',
-    // flexWrap: 'wrap',
-    justifyContent: "space-around",
-    // overflow: 'hidden',
-  },
+  iconsList: {},
   gridList: {
-    // display: 'flex',
-    // flexWrap: "wrap",
     justifyContent: "space-around",
-
-    // transform: "translateZ(0)",
+    paddingLeft: 40,
+    "@media (max-width:600px)": {
+      paddingLeft: 22,
+    },
   },
   iconList: {
     maxHeight: "8vh",
@@ -130,5 +121,5 @@ const useStyles = makeStyles((theme) => ({
       width: theme.spacing(4),
       height: theme.spacing(4),
     },
-  } 
+  },
 }));

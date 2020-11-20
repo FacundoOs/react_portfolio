@@ -15,25 +15,7 @@ import { useSlopeCardMediaStyles } from "@mui-treasury/styles/cardMedia/slope";
 import { useN01TextInfoContentStyles } from "@mui-treasury/styles/textInfoContent/n01";
 import TextInfoContent from "@mui-treasury/components/content/textInfo";
 
-const useStyles = makeStyles(() => ({
-  root: {
-    height: 390,
-    maxWidth: 304,
-    margin: 6,
-  },
-  content: {
-    padding: 24,
-  },
-  avatar: {
-    width: 50,
-    height: 50,
-    border: "2px solid #fff",
-    margin: "-48px 32px 0 auto",
-    "& > img": {
-      margin: 0,
-    },
-  },
-}));
+
 
 const ProjectCard = ({ projects }) => {
   const cardStyles = useStyles();
@@ -68,3 +50,23 @@ const ProjectCard = ({ projects }) => {
 };
 
 export default ProjectCard;
+
+const useStyles = makeStyles(() => ({
+  root: {
+    height: 390,
+    maxWidth: 304,
+    margin: 6,
+  },
+  content: {
+    padding: 24,
+  },
+  avatar: {
+    width: 50,
+    height: 50,
+    border: "2px solid #fff",
+    margin: "-48px 32px 0 auto",
+    "& > img": {
+      margin: 0,
+    },
+  },
+}));

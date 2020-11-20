@@ -1,24 +1,19 @@
-import React, { useState } from "react";
-import Hello from "./Hello";
+import React from "react";
 import Home from "./Home";
 import Footer from "./Footer";
 import { Switch, Route } from "react-router-dom";
 import About from "./About";
-import Cv from "./Cv";
-import MainPage from "./MainPage";
 import Navbar from "./Navbar";
 import Particles from "react-particles-js";
 import { makeStyles } from "@material-ui/core/styles";
 import ProjectsList from "./ProjectsList";
-import Contact from './Contact'
+import Contact from "./Contact";
 
 const App = () => {
   const classes = useStyles();
   return (
     <>
       <Navbar />
-      {/* <PostCardDemo/> */}
-
       <Particles
         canvasClassName={classes.particlesCanva}
         params={{
@@ -68,9 +63,7 @@ const App = () => {
         <Route exact path="/projects" component={ProjectsList}></Route>
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/contact" component={Contact}></Route>
-        {/* <Route exact path="/" component={MainPage}></Route> */}
-        {/* <Route exact path="/about" component={About}></Route> */}
-        <Route exact path="/Resume" component={Cv}></Route>
+        <Route exact path="/about" component={About}></Route>
       </Switch>
       <Footer />
     </>
@@ -83,6 +76,6 @@ const useStyles = makeStyles({
   particlesCanva: {
     position: "absolute",
     top: 0,
-    left: 0
+    left: 0,
   },
 });
