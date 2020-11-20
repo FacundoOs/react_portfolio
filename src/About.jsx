@@ -9,9 +9,56 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import photo from "./assets/profile.jpeg";
 
+const About = () => {
+  const classes = useStyle();
+  return (
+    <Grid container justify="center">
+      <Card className={classes.root}>
+        <CardMedia
+          className={classes.media}
+          image={photo}
+          title="test"
+        ></CardMedia>
+        <CardContent className={classes.content}>
+          <Typography variant="h5" className={classes.about}>
+            About me
+          </Typography>
+          <CardContent id="aboutTitle" className={classes.titleDescription}>
+            <Typography className={classes.aboutTitle}>
+              Where there are obstacles and problems, I see opportunities.
+            </Typography>
+          </CardContent>
+
+          <CardContent id="aboutDescription" className={classes.aboutDescriptionRoot}>
+            <Typography className={classes.aboutDescription}>
+              Hi. I am Facundo, an Argentine boy who loves challenges. I
+              currently live in Stockholm.
+            </Typography>
+            <Typography className={classes.aboutDescription}>
+              Taking my first steps in the world of programming.
+            </Typography>
+            <Typography className={classes.aboutDescription}>
+              I did an intensive 3-month full-stack developer course where I not
+              only learned new languages, I was also trained in agile
+              methodologies, pair programming and the soft skills necessary to
+              move in this world.
+            </Typography>
+            <Typography className={classes.aboutDescription}>
+              More than 11 years of work experience in technical areas. As a
+              technician and as a manager.
+            </Typography>
+          </CardContent>
+        </CardContent>
+      </Card>
+    </Grid>
+  );
+};
+
+export default About;
+
 const useStyle = makeStyles(({ breakpoints }) => ({
   root: {
-    margin: "6rem 1rem",
+    margin: "5rem 1rem",
     display: "flex",
     borderRadius: "1rem",
     flexDirection: "column",
@@ -20,10 +67,10 @@ const useStyle = makeStyles(({ breakpoints }) => ({
     position: "relative",
     width: "85%",
     transition: "0.8s",
-    paddingBottom: "1rem",
     [breakpoints.up("md")]: {
       flexDirection: "row",
       paddingTop: "2rem",
+      paddingBottom: "1rem",
       marginLeft: "3rem",
       margintRigth: "3rem",
     },
@@ -53,67 +100,28 @@ const useStyle = makeStyles(({ breakpoints }) => ({
     marginBottom: "2rem",
     [breakpoints.down("md")]: {
       fontSize: 16,
+      marginBottom: 0,
     },
   },
   aboutTitle: {
     fontSize: 23,
     paddingBottom: "0.6rem",
-    [breakpoints.down("md")]: {
+    [breakpoints.down("xs")]: {
       fontSize: 18,
+      padding: 0,
+    },
+  },
+  aboutDescriptionRoot: {
+    padding: 0,
+    [breakpoints.down("xs")]: {
+      paddingBottom: 0
     },
   },
   aboutDescription: {
     fontSize: 18,
     paddingBottom: "0.6rem",
-    [breakpoints.down("md")]: {
+    [breakpoints.down("xs")]: {
       fontSize: 14,
     },
   },
 }));
-
-const About = () => {
-  const classes = useStyle();
-  return (
-    <Grid container justify="center">
-      <Card className={classes.root}>
-        <CardMedia
-          className={classes.media}
-          image={photo}
-          title="test"
-        ></CardMedia>
-        <CardContent className={classes.content}>
-          <Typography variant="h5" className={classes.about}>
-            About me
-          </Typography>
-          <CardContent class="aboutTitle" className={classes.titleDescription}>
-            <Typography className={classes.aboutTitle}>
-              Where there are obstacles and problems, I see opportunities.
-            </Typography>
-          </CardContent>
-
-          <CardContent class="aboutDescription">
-            <Typography className={classes.aboutDescription}>
-              Hi. I am Facundo, an Argentine boy who loves challenges. I
-              currently live in Stockholm.
-            </Typography>
-            <Typography className={classes.aboutDescription}>
-              Taking my first steps in the world of programming.
-            </Typography>
-            <Typography className={classes.aboutDescription}>
-              I did an intensive 3-month full-stack developer course where I not
-              only learned new languages, I was also trained in agile
-              methodologies, pair programming and the soft skills necessary to
-              move in this world.
-            </Typography>
-            <Typography className={classes.aboutDescription}>
-              More than 11 years of work experience in technical areas. As a
-              technician and as a manager.
-            </Typography>
-          </CardContent>
-        </CardContent>
-      </Card>
-    </Grid>
-  );
-};
-
-export default About;

@@ -8,10 +8,10 @@ body {
    height: 0;
   }
 
-.aboutTitle p {
+#aboutTitle p {
   font-family: 'Big Shoulders Stencil Display', cursive;
 }
 
-.aboutDescription p {
+#aboutDescription p {
   font-family: 'Space Grotesk', sans-serif;
 }
