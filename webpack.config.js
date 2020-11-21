@@ -53,5 +53,5 @@ module.exports = {
       }),
     ],
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [new UglifyJsPlugin()],
 };
