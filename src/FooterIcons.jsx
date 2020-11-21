@@ -7,27 +7,27 @@ const FooterIcons = () => {
   const classes = useStyles();
   return (
     <BottomNavigation className={classes.root}>
-      <a target="_blank" href={"https://www.facebook.com/facundo.osores.58/"}>
+      {/* <a target="_blank" href={"https://www.facebook.com/facundo.osores.58/"}> */}
         <BottomNavigationAction
           label="Facebook"
           value="facebook"
           icon={<Facebook />}
         />
-      </a>
-      <a target="_blank" href={"https://www.linkedin.com/in/facundo-osores/"}>
+      {/* </a> */}
+      {/* <a target="_blank" href={"https://www.linkedin.com/in/facundo-osores/"}> */}
         <BottomNavigationAction
           label="Linkedin"
           value="linkedin"
           icon={<LinkedIn />}
         />
-      </a>
-      <a target="_blank" href={"https://github.com/FacundoOs"}>
+      {/* </a> */}
+      {/* <a target="_blank" href={"https://github.com/FacundoOs"}> */}
         <BottomNavigationAction
           label="Github"
           value="github"
           icon={<GitHub />}
         />
-      </a>
+      {/* </a> */}
     </BottomNavigation>
   );
 };
