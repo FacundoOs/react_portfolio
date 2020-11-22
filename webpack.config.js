@@ -4,7 +4,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
-  mode: "development",
+  // mode: "development",
   module: {
     rules: [
       {
@@ -31,14 +31,14 @@ module.exports = {
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
-    path: path.resolve(__dirname, "dist/"),
+    path: path.resolve(__dirname, "build"),
     publicPath: "/dist/",
     filename: "bundle.js",
   },
   devServer: {
-    contentBase: path.join(__dirname, "/"),
+    contentBase: path.join(__dirname, "./build"),
     port: 3000,
-    publicPath: "http://localhost:3000/dist/",
+    publicPath: "http://localhost:3000/build/",
     watchContentBase: true,
     historyApiFallback: true,
   },
@@ -53,5 +53,5 @@ module.exports = {
       }),
     ],
   },
-  plugins: [new UglifyJsPlugin()],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
 };
