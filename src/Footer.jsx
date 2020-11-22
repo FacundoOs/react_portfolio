@@ -15,13 +15,15 @@ export default Footer
 
 const useStyle = makeStyles(() => ({
   root: {
+    display: 'flex',
     position: 'fixed',
     width: '100%',
-    height: '40px',
+    height: '20px',
     bottom: 0,
     paddingTop: '10px',
     paddingBottom: '10px',
     backgroundColor: '#f5f5f5',
-    textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 }))

@@ -34,8 +34,8 @@ const About = () => {
             className={classes.aboutDescriptionRoot}
           >
             <Typography className={classes.aboutDescription}>
-              Hi. I am Facundo, an Argentine boy who loves challenges. I
-              currently live in Stockholm.
+              Hi. I am Facundo, an Argentinian who loves challenges. I currently
+              live in Stockholm.
             </Typography>
             <Typography className={classes.aboutDescription}>
               Taking my first steps in the world of programming.
@@ -112,12 +112,6 @@ const useStyle = makeStyles(({ breakpoints }) => ({
     [breakpoints.down('xs')]: {
       fontSize: 18,
       padding: 0,
-    },
-  },
-  aboutDescriptionRoot: {
-    padding: 0,
-    [breakpoints.down('xs')]: {
-      paddingBottom: 0,
     },
   },
   aboutDescription: {

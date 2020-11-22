@@ -30,6 +30,6 @@ export default ProjectsList
 const useStyles = makeStyles({
   root: {
     width: '100%',
-    margin: '6rem 0',
+    margin: '5rem 0',
   },
 })

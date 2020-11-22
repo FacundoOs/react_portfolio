@@ -94,6 +94,9 @@ const MyTextField = withStyles({
     },
     '& label': {
       color: '#F1810E',
+      '@media (max-width:450px)': {
+        fontSize: '0.8rem',
+      },
     },
     '& .MuiInput-underline:after': {
       borderBottomColor: 'red',
@@ -135,7 +138,7 @@ const useStyle = makeStyles(theme => ({
     borderColor: '#F1810E',
     fontSize: '1.5rem',
     '@media (max-width:450px)': {
-      fontSize: '1rem',
+      fontSize: '0.8rem',
     },
   },
 }))

@@ -34,6 +34,10 @@ module.exports = {
   },
   devServer: {
     contentBase: './build',
+    port: 3000,
+    publicPath: 'http://localhost:3000/',
+    watchContentBase: true,
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({

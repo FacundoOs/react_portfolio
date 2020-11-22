@@ -66,7 +66,9 @@ const Navbar = () => {
             <IconButton onClick={toggleSlider('right', true)}>
               <Menu />
             </IconButton>
-            <Typography variant="h5">Portfolio</Typography>
+            <Typography id="PortfolioTitle" variant="h5">
+              Portfolio
+            </Typography>
             <MobilRightMenuSlider
               anchor="left"
               open={state.right}
