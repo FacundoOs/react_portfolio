@@ -1,27 +1,27 @@
-import React from "react";
-import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
-import { Facebook, LinkedIn, GitHub } from "@material-ui/icons";
-import { makeStyles } from "@material-ui/core/styles";
+import React from 'react'
+import { BottomNavigation, BottomNavigationAction } from '@material-ui/core'
+import { Facebook, LinkedIn, GitHub } from '@material-ui/icons'
+import { makeStyles } from '@material-ui/core/styles'
 
 const FooterIcons = () => {
-  const classes = useStyles();
+  const classes = useStyles()
   return (
     <BottomNavigation className={classes.root}>
-      <a target="_blank" href={"https://www.facebook.com/facundo.osores.58/"}>
+      <a target="_blank" href={'https://www.facebook.com/facundo.osores.58/'}>
         <BottomNavigationAction
           label="Facebook"
           value="facebook"
           icon={<Facebook />}
         />
       </a>
-      <a target="_blank" href={"https://www.linkedin.com/in/facundo-osores/"}>
+      <a target="_blank" href={'https://www.linkedin.com/in/facundo-osores/'}>
         <BottomNavigationAction
           label="Linkedin"
           value="linkedin"
           icon={<LinkedIn />}
         />
       </a>
-      <a target="_blank" href={"https://github.com/FacundoOs"}>
+      <a target="_blank" href={'https://github.com/FacundoOs'}>
         <BottomNavigationAction
           label="Github"
           value="github"
@@ -29,23 +29,23 @@ const FooterIcons = () => {
         />
       </a>
     </BottomNavigation>
-  );
-};
+  )
+}
 
-export default FooterIcons;
+export default FooterIcons
 
 const useStyles = makeStyles({
   root: {
-    " .MuiBottomNavigationAction-root": {
+    ' .MuiBottomNavigationAction-root': {
       maxWidth: 250,
-      color: "#4B6EC5",
+      color: '#4B6EC5',
     },
-    "& .MuiSvgIcon-root": {
-      color: "#4B6EC5",
-      "&:hover": {
-        color: "#000",
-        fontSize: "2rem",
+    '& .MuiSvgIcon-root': {
+      color: '#4B6EC5',
+      '&:hover': {
+        color: '#000',
+        fontSize: '2rem',
       },
     },
   },
-});
+})

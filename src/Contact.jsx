@@ -1,36 +1,36 @@
-import React, { useState } from "react";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
-import { Box, Button, Grid, Typography } from "@material-ui/core";
-import emailjs from "emailjs-com";
+import React, { useState } from 'react'
+import { makeStyles, withStyles } from '@material-ui/core/styles'
+import TextField from '@material-ui/core/TextField'
+import { Box, Button, Grid, Typography } from '@material-ui/core'
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
-  const classes = useStyle();
-  const [message, setMessage] = useState("");
+  const classes = useStyle()
+  const [message, setMessage] = useState('')
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = e => {
+    e.preventDefault()
     emailjs
       .sendForm(
-        "gmail",
-        "portfolio_contact",
+        'gmail',
+        'portfolio_contact',
         e.target,
-        "user_CLlpYlJ5sKkXQ4MOclSOH"
+        'user_CLlpYlJ5sKkXQ4MOclSOH'
       )
       .then(
-        (result) => {
-          setMessage("Your message was send. Thanks");
+        result => {
+          setMessage('Your message was send. Thanks')
 
-          console.log(result.text);
+          console.log(result.text)
         },
-        (error) => {
-          setMessage("Something happend. Try again");
-          console.log(error.text);
+        error => {
+          setMessage('Something happend. Try again')
+          console.log(error.text)
         }
-      );
+      )
 
-    e.target.reset();
-  };
+    e.target.reset()
+  }
 
   return (
     <Grid container justify="center">
@@ -82,60 +82,60 @@ const Contact = () => {
         {message && <Typography>{message}</Typography>}
       </Box>
     </Grid>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
 
 const MyTextField = withStyles({
   root: {
-    "& label.Mui-focused": {
-      color: "#F1810E",
+    '& label.Mui-focused': {
+      color: '#F1810E',
     },
-    "& label": {
-      color: "#F1810E",
+    '& label': {
+      color: '#F1810E',
     },
-    "& .MuiInput-underline:after": {
-      borderBottomColor: "red",
+    '& .MuiInput-underline:after': {
+      borderBottomColor: 'red',
     },
-    "& .MuiOutlinedInput-root": {
-      "& fieldset": {
-        borderColor: "#F1810E",
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: '#F1810E',
       },
-      "&:hover fieldset": {
-        borderColor: "yellow",
+      '&:hover fieldset': {
+        borderColor: 'yellow',
       },
-      "&.Mui-focused fieldset": {
-        borderColor: "#4B6EC5",
+      '&.Mui-focused fieldset': {
+        borderColor: '#4B6EC5',
       },
     },
   },
-})(TextField);
+})(TextField)
 
-const useStyle = makeStyles((theme) => ({
+const useStyle = makeStyles(theme => ({
   title: {
-    "@media (max-width:450px)": {
-      fontSize: "1.5rem",
+    '@media (max-width:450px)': {
+      fontSize: '1.5rem',
     },
   },
   form: {
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    position: "absolute",
-    color: "white",
-    textAlign: "center",
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    position: 'absolute',
+    color: 'white',
+    textAlign: 'center',
   },
   input: {
-    color: "white",
+    color: 'white',
   },
   button: {
-    marginTop: "1.5rem",
-    color: "#F1810E",
-    borderColor: "#F1810E",
-    fontSize: "1.5rem",
-    "@media (max-width:450px)": {
-      fontSize: "1rem",
+    marginTop: '1.5rem',
+    color: '#F1810E',
+    borderColor: '#F1810E',
+    fontSize: '1.5rem',
+    '@media (max-width:450px)': {
+      fontSize: '1rem',
     },
   },
-}));
+}))

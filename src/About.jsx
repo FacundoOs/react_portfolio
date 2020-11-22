@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react'
 import {
   Card,
   CardContent,
   CardMedia,
   Grid,
   Typography,
-} from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import photo from "./assets/profile.jpeg";
+} from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles'
+import photo from './assets/profile.jpeg'
 
 const About = () => {
-  const classes = useStyle();
+  const classes = useStyle()
   return (
     <Grid container justify="center">
       <Card className={classes.root}>
@@ -29,7 +29,10 @@ const About = () => {
             </Typography>
           </CardContent>
 
-          <CardContent id="aboutDescription" className={classes.aboutDescriptionRoot}>
+          <CardContent
+            id="aboutDescription"
+            className={classes.aboutDescriptionRoot}
+          >
             <Typography className={classes.aboutDescription}>
               Hi. I am Facundo, an Argentine boy who loves challenges. I
               currently live in Stockholm.
@@ -51,77 +54,77 @@ const About = () => {
         </CardContent>
       </Card>
     </Grid>
-  );
-};
+  )
+}
 
-export default About;
+export default About
 
 const useStyle = makeStyles(({ breakpoints }) => ({
   root: {
-    margin: "5rem 1rem",
-    display: "flex",
-    borderRadius: "1rem",
-    flexDirection: "column",
-    overflow: "initial",
-    alignItems: "center",
-    position: "relative",
-    width: "85%",
-    transition: "0.8s",
-    [breakpoints.up("md")]: {
-      flexDirection: "row",
-      paddingTop: "2rem",
-      paddingBottom: "1rem",
-      marginLeft: "3rem",
-      margintRigth: "3rem",
+    margin: '5rem 1rem',
+    display: 'flex',
+    borderRadius: '1rem',
+    flexDirection: 'column',
+    overflow: 'initial',
+    alignItems: 'center',
+    position: 'relative',
+    width: '85%',
+    transition: '0.8s',
+    [breakpoints.up('md')]: {
+      flexDirection: 'row',
+      paddingTop: '2rem',
+      paddingBottom: '1rem',
+      marginLeft: '3rem',
+      margintRigth: '3rem',
     },
   },
   media: {
-    position: "relative",
-    borderRadius: "1rem",
-    width: "50%",
+    position: 'relative',
+    borderRadius: '1rem',
+    width: '50%',
     height: 0,
-    marginTop: "-1rem",
-    paddingBottom: "48%",
+    marginTop: '-1rem',
+    paddingBottom: '48%',
 
-    [breakpoints.up("md")]: {
-      width: "100%",
-      transform: "translateX(-20px)",
+    [breakpoints.up('md')]: {
+      width: '100%',
+      transform: 'translateX(-20px)',
     },
   },
   content: {
-    width: "90%",
+    width: '90%',
   },
   about: {
-    display: "inline-block",
-    background: "#222",
-    color: "white",
-    borderRadius: "0.8rem",
-    padding: "4px",
-    marginBottom: "2rem",
-    [breakpoints.down("md")]: {
+    display: 'inline-block',
+    background: '#222',
+    color: 'white',
+    borderRadius: '0.8rem',
+    padding: '4px',
+    marginBottom: '2rem',
+    [breakpoints.down('md')]: {
       fontSize: 16,
       marginBottom: 0,
     },
   },
   aboutTitle: {
     fontSize: 23,
-    paddingBottom: "0.6rem",
-    [breakpoints.down("xs")]: {
+    paddingBottom: '0.6rem',
+    [breakpoints.down('xs')]: {
       fontSize: 18,
       padding: 0,
     },
   },
   aboutDescriptionRoot: {
     padding: 0,
-    [breakpoints.down("xs")]: {
-      paddingBottom: 0
+    [breakpoints.down('xs')]: {
+      paddingBottom: 0,
     },
   },
   aboutDescription: {
     fontSize: 18,
-    paddingBottom: "0.6rem",
-    [breakpoints.down("xs")]: {
+    paddingBottom: '0.6rem',
+    [breakpoints.down('xs')]: {
       fontSize: 14,
     },
   },
-}));
+}))

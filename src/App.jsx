@@ -1,16 +1,16 @@
-import React from "react";
-import Home from "./Home";
-import Footer from "./Footer";
-import { Switch, Route } from "react-router-dom";
-import About from "./About";
-import Navbar from "./Navbar";
-import Particles from "react-particles-js";
-import { makeStyles } from "@material-ui/core/styles";
-import ProjectsList from "./ProjectsList";
-import Contact from "./Contact";
+import React from 'react'
+import Home from './Home.jsx'
+import Footer from './Footer.jsx'
+import About from './About.jsx'
+import Navbar from './Navbar.jsx'
+import Particles from 'react-particles-js'
+import ProjectsList from './ProjectsList.jsx'
+import Contact from './Contact.jsx'
+import { makeStyles } from '@material-ui/core/styles'
+import { Switch, Route } from 'react-router-dom'
 
 const App = () => {
-  const classes = useStyles();
+  const classes = useStyles()
   return (
     <>
       <Navbar />
@@ -29,10 +29,10 @@ const App = () => {
               enable: false,
             },
             shape: {
-              type: "circle",
+              type: 'circle',
               stroke: {
                 width: 1,
-                color: "tomato",
+                color: 'tomato',
               },
             },
             size: {
@@ -67,15 +67,15 @@ const App = () => {
       </Switch>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
 
 const useStyles = makeStyles({
   particlesCanva: {
-    position: "absolute",
+    position: 'absolute',
     top: 0,
     left: 0,
   },
-});
+})

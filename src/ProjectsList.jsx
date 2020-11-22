@@ -1,13 +1,13 @@
-import React from "react";
-import { projectData } from "./data/projects";
-import PostCardDemo from "./ProjectCard";
-import { Grid, makeStyles } from "@material-ui/core";
+import React from 'react'
+import { projectData } from './data/projects'
+import PostCardDemo from './ProjectCard.jsx'
+import { Grid, makeStyles } from '@material-ui/core'
 
 const ProjectsList = () => {
-  const classes = useStyles();
+  const classes = useStyles()
   return (
     <Grid container spacing={3} justify="center" className={classes.root}>
-      {projectData.map((projects) => {
+      {projectData.map(projects => {
         return (
           <Grid
             item
@@ -19,17 +19,17 @@ const ProjectsList = () => {
           >
             <PostCardDemo projects={projects} />;
           </Grid>
-        );
+        )
       })}
     </Grid>
-  );
-};
+  )
+}
 
-export default ProjectsList;
+export default ProjectsList
 
 const useStyles = makeStyles({
   root: {
-    width: "100%",
-    margin: "6rem 0",
+    width: '100%',
+    margin: '6rem 0',
   },
-});
+})
