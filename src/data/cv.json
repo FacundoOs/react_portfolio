@@ -11,11 +11,13 @@
     "title": "job_experience",
     "date": "Apr 2019 – Jul 2019",
     "position": "Repair Station Leader",
-    "description": "In charge of the hard fix area, personal management and teaching, implementation and development of new processes, stock management, inter-area organization, search for better repair methods, logistics"},
+    "description": "In charge of the hard fix area, personal management and teaching, implementation and development of new processes, stock management, inter-area organization, search for better repair methods, logistics"
+  },
   {
     "id": 3,
     "title": "job_experience",
     "date": "Oct 2015 – Mar 2017",
     "position": "Production manager",
-    "description": "In charge of the production area. Personnel Management. Repair and manufacture of electronic equipment. Inter-area organization. Process improvements. Quality control development. Decrease wasteful in production processes. Testing of new products in conjunction with the engineering area. Occupational safety and health. Planning and coordination."}
+    "description": "In charge of the production area. Personnel Management. Repair and manufacture of electronic equipment. Inter-area organization. Process improvements. Quality control development. Decrease wasteful in production processes. Testing of new products in conjunction with the engineering area. Occupational safety and health. Planning and coordination."
+  }
 ]

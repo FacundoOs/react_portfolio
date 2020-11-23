@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  height: 0;
+}
+
+#aboutTitle p {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+#aboutDescription p {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+#PortfolioTitle {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#homeName span {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+#homeString span {
+  font-family: 'Space Grotesk', sans-serif;
+}

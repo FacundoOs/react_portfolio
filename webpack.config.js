@@ -1,47 +1,47 @@
-const path = require("path");
-const webpack = require("webpack");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: "./src/index.js",
-  mode: "development",
+  entry: './src/index.js',
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
-        loader: "babel-loader",
-        options: { presets: ["@babel/env"] },
+        use: ['babel-loader', 'eslint-loader'],
       },
-    {
-      test: /\.css$/,
-      use: ["style-loader", "css-loader"],
-    },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[hash].[ext]',
+            outputPath: 'assets/',
+          },
+        },
+      },
     ],
   },
-  resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
-    path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
-    filename: "bundle.js",
+    path: path.resolve(__dirname, 'build'),
+    publicPath: '/',
+    filename: 'bundle.js',
   },
   devServer: {
-    contentBase: path.join(__dirname, "/"),
+    contentBase: './build',
     port: 3000,
-    publicPath: "http://localhost:3000/dist/",
+    publicPath: 'http://localhost:3000/',
     watchContentBase: true,
     historyApiFallback: true,
   },
-  optimization: {
-    minimizer: [
-      new UglifyJsPlugin({
-        uglifyOptions: {
-          mangle: {
-            keep_fnames: true,
-          },
-        },
-      }),
-    ],
-  },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
-};
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve('./index.html'),
+    }),
+  ],
+}

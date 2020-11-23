@@ -1,13 +1,29 @@
-import React from "react";
+import React from 'react'
+import { Box } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles'
 
 const Footer = () => {
+  const classes = useStyle()
   return (
-    <footer>
-      <div className="ui container">
-        <p id="footer">Made with React {React.version}</p>
-      </div>
-    </footer>
-  );
-};
+    <Box component="footer" className={classes.root}>
+      <p>Made with React {React.version}</p>
+    </Box>
+  )
+}
 
-export default Footer;
+export default Footer
+
+const useStyle = makeStyles(() => ({
+  root: {
+    display: 'flex',
+    position: 'fixed',
+    width: '100%',
+    height: '20px',
+    bottom: 0,
+    paddingTop: '10px',
+    paddingBottom: '10px',
+    backgroundColor: '#f5f5f5',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+}))
