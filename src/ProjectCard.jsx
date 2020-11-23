@@ -14,6 +14,7 @@ import { useSoftRiseShadowStyles } from '@mui-treasury/styles/shadow/softRise'
 import { useSlopeCardMediaStyles } from '@mui-treasury/styles/cardMedia/slope'
 import { useN01TextInfoContentStyles } from '@mui-treasury/styles/textInfoContent/n01'
 import TextInfoContent from '@mui-treasury/components/content/textInfo'
+import avatar from './assets/avatar_projects.png'
 
 const ProjectCard = ({ projects }) => {
   const cardStyles = useStyles()
@@ -24,10 +25,7 @@ const ProjectCard = ({ projects }) => {
   return (
     <Card className={cx(cardStyles.root, shadowStyles.root)}>
       <CardMedia classes={mediaStyles} image={projects.image} />
-      <Avatar
-        className={cardStyles.avatar}
-        src={'src/assets/undraw_programming_2svr.png'}
-      />
+      <Avatar className={cardStyles.avatar} src={avatar} />
       <CardContent className={cardStyles.content}>
         <TextInfoContent
           classes={textCardContentStyles}

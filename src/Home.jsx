@@ -43,11 +43,11 @@ const Home = props => {
       <Grid container justify="center">
         <Avatar className={classes.avatar} src={avatar} alt="avatar-picture" />
       </Grid>
-      <Typography className={classes.title}>
+      <Typography className={classes.title} id="homeName">
         <Typed strings={['Facundo Osores']} typeSpeed={40} />
       </Typography>
       <br />
-      <Typography className={classes.subtitle} variant="h4">
+      <Typography className={classes.subtitle} variant="h4" id="homeString">
         <Typed
           strings={['Web Design', 'Web Development', 'Full Stack Developer']}
           typeSpeed={40}
@@ -106,7 +106,7 @@ const useStyles = makeStyles(theme => ({
   iconsList: {},
   gridList: {
     justifyContent: 'space-around',
-    paddingLeft: 40,
+    paddingLeft: 70,
     '@media (max-width:600px)': {
       paddingLeft: 22,
     },

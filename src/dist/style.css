@@ -19,3 +19,15 @@ body {
 #PortfolioTitle {
   font-family: 'Montserrat', sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+#homeName span {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+#homeString span {
+  font-family: 'Space Grotesk', sans-serif;
+}

@@ -41,10 +41,13 @@ const About = () => {
               Taking my first steps in the world of programming.
             </Typography>
             <Typography className={classes.aboutDescription}>
-              I did an intensive 3-month full-stack developer course where I not
-              only learned new languages, I was also trained in agile
-              methodologies, pair programming and the soft skills necessary to
-              move in this world.
+              I did a full-time full-stack coding bootcamp at{' '}
+              <a href="https://craftacademy.se/english/" target="_blank">
+                Craft Academy
+              </a>{' '}
+              in Stockholm where I not only learned new languages, I was also
+              trained in agile methodologies, pair programming and the soft
+              skills necessary to move in this world.
             </Typography>
             <Typography className={classes.aboutDescription}>
               More than 11 years of work experience in technical areas. As a
