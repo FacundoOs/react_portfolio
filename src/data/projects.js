@@ -15,7 +15,7 @@ export const projectData = [
       'https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
     description:
       'Final project at Craft Academy. App where development jobs can be offered and developers can apply ',
-    link: 'https://github.com/CraftAcademy/develUp_mobile',
+    link: '',
     github: 'https://github.com/CraftAcademy/develUp_mobile',
   },
   {

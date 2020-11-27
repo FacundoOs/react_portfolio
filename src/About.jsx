@@ -45,9 +45,9 @@ const About = () => {
               <a href="https://craftacademy.se/english/" target="_blank">
                 Craft Academy
               </a>{' '}
-              in Stockholm where I not only learned new languages, I was also
-              trained in agile methodologies, pair programming and the soft
-              skills necessary to move in this world.
+              in Stockholm where I learned React, React Native and Ruby on
+              Rails. I was also trained in agile methodologies, pair programming
+              and the soft skills necessary to move in this world.
             </Typography>
             <Typography className={classes.aboutDescription}>
               More than 11 years of work experience in technical areas. As a
