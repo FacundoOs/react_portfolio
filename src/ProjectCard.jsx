@@ -34,14 +34,20 @@ const ProjectCard = ({ projects }) => {
         />
       </CardContent>
       <Box px={2} pb={2} mt={-1}>
-        <a target="_blank" href={projects.link}>
-          <IconButton color="secondary">
-            <Share />
-          </IconButton>
-          <IconButton color="secondary">
-            <GitHub />
-          </IconButton>
-        </a>
+        {projects.link.length !== 0 ? (
+          <a target="_blank" href={projects.link}>
+            <IconButton color="secondary">
+              <Share />
+            </IconButton>
+          </a>
+        ) : null}
+        {projects.github.length !== 0 ? (
+          <a target="_blank" href={projects.github}>
+            <IconButton color="secondary">
+              <GitHub />
+            </IconButton>
+          </a>
+        ) : null}
       </Box>
     </Card>
   )
