@@ -1,16 +1,36 @@
 export const projectData = [
   {
     id: 1,
-    name: 'Amazon Clone',
+    name: 'Data Warehouse',
     image:
-      'https://user-images.githubusercontent.com/68663401/103627438-e942ca80-4f3d-11eb-8c62-13aae8971e92.png',
+      'https://user-images.githubusercontent.com/68663401/126680832-76a138cf-7a6c-4107-b403-c9d3937f48d4.png',
     description:
-      'Amazon clone with firebase authentication and payment with Stripe',
-    link: 'https://clone-1b668.web.app/',
-    github: 'https://github.com/FacundoOs/amazon-clone',
+      'App that allows a Marketing company to manage all the contacts of its clients. Built with JavaScript, Node, Express, MongoDB, HTML and SaaS and jsonwebtoken',
+    link: '',
+    github: 'https://github.com/FacundoOs/rock_paper_scissors_react',
   },
   {
     id: 2,
+    name: 'Healt Integrator web site',
+    image:
+      'https://user-images.githubusercontent.com/68663401/126683298-6e12e14a-9f45-4a9c-adbb-1e668f9fb0c5.png',
+    description:
+      'App of the new website of the Health Integrator company. Built with Full Stack Ruby on Rails, Strapi CMS, Stimulus and Tailwind.',
+    link: 'https://www.healthintegrator.se/',
+    github: '',
+  },
+  {
+    id: 3,
+    name: 'Delilah Resto',
+    image:
+      'https://images.unsplash.com/photo-1556438064-2d7646166914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+    description:
+      'This API allows you to create an online ordering system for a restaurant. Built with Node, Express and MySQL. Use jsonwebtoken for authentication',
+    link: '',
+    github: 'https://github.com/FacundoOs/delilah-resto',
+  },
+  {
+    id: 4,
     name: 'Matchup mobile app',
     image:
       'https://user-images.githubusercontent.com/68663401/103628536-79354400-4f3f-11eb-9231-67ba001768be.png',
@@ -20,7 +40,7 @@ export const projectData = [
     github: 'https://github.com/FacundoOs/develUp_mobile',
   },
   {
-    id: 3,
+    id: 5,
     name: 'Digital newspaper',
     image:
       'https://d33wubrfki0l68.cloudfront.net/5fdccf4020225f0008d776bd/screenshot.png',
@@ -30,7 +50,7 @@ export const projectData = [
     github: 'https://github.com/FacundoOs/client_user_good_morning_news',
   },
   {
-    id: 4,
+    id: 6,
     name: 'My First Website',
     image:
       'https://d33wubrfki0l68.cloudfront.net/5fc770b58cb0056e0c27a0c7/screenshot.png',
@@ -40,27 +60,17 @@ export const projectData = [
     github: '',
   },
   {
-    id: 5,
-    name: 'Cooper test',
-    image:
-      'https://d33wubrfki0l68.cloudfront.net/5f6545741d34ea00075747aa/screenshot.png',
-    description:
-      'First project joining front-end and back-end. React and Ruby On rails',
-    link: 'https://fo-cooper-test.netlify.app/',
-    github: 'https://github.com/FacundoOs/cooper_client_react',
-  },
-  {
-    id: 6,
-    name: 'Rock, paper, scissor',
-    image:
-      'https://images.unsplash.com/photo-1556438064-2d7646166914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    description:
-      'Classic game made with React and practice adding backend with Ruby on Rails',
-    link: 'https://rock-paper-scissor-facundo-osores.netlify.app/',
-    github: 'https://github.com/FacundoOs/rock_paper_scissors_react',
-  },
-  {
     id: 7,
+    name: 'Amazon Clone',
+    image:
+      'https://user-images.githubusercontent.com/68663401/103627438-e942ca80-4f3d-11eb-8c62-13aae8971e92.png',
+    description:
+      'Amazon clone with firebase authentication and payment with Stripe',
+    link: 'https://clone-1b668.web.app/',
+    github: 'https://github.com/FacundoOs/amazon-clone',
+  },
+  {
+    id: 8,
     name: 'Portfolio',
     image:
       'https://d33wubrfki0l68.cloudfront.net/5fc0cfcb696e2500074a76b1/screenshot.png',
