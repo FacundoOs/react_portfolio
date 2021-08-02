@@ -16,7 +16,7 @@ export default Footer
 const useStyle = makeStyles(() => ({
   root: {
     display: 'flex',
-    position: 'fixed',
+    // position: 'fixed',
     width: '100%',
     height: '20px',
     bottom: 0,
