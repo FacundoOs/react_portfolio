@@ -5,7 +5,6 @@ const useStyles = makeStyles(({ breakpoints }) => ({
   root: {
     background:
       'linear-gradient(0deg, rgba(5,16,106,1) 51%, rgba(60,90,255,1) 100%)',
-    // paddingBottom: '4rem',
   },
   title: {
     paddingLeft: '7rem',

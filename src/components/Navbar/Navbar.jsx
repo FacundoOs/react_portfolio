@@ -20,7 +20,7 @@ import {
   AssignmentInd,
   ContactMail,
 } from '@material-ui/icons'
-import avatar from '../../assets/avatar.png'
+import avatar from '../../assets/home-image/avatar.png'
 import MobilRightMenuSlider from '@material-ui/core/Drawer'
 import { Link } from 'react-router-dom'
 import FooterIcons from './FooterIcons.jsx'

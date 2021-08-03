@@ -5,7 +5,7 @@ import { Box, Button, Grid, Typography } from '@material-ui/core'
 import emailjs from 'emailjs-com'
 import useStyle from './contactStyle'
 import MyTextField from './textFieldStyle'
-import DividerSection from '../../shared/Divider.jsx'
+import DividerSection from '../../components/DividerShared/Divider.jsx'
 
 const Contact = () => {
   const classes = useStyle()

@@ -3,7 +3,6 @@ import useStyle from '../About/aboutStyle'
 
 const useStyles = makeStyles(() => ({
   root: {
-    // minHeight: 460,
     height: '100%',
     margin: 6,
     display: 'flex',
@@ -16,7 +15,10 @@ const useStyles = makeStyles(() => ({
     },
   },
   content: {
-    padding: 24,
+    padding: '.1rem 1rem!important',
+    '& .MuiTypography-root': {
+      lineHeight: 1.2,
+    },
   },
   avatar: {
     width: 50,

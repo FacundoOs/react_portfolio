@@ -11,8 +11,6 @@ const useStyles = makeStyles(theme => ({
   },
   root: {
     padding: '5rem 3rem',
-    // background:
-    //   'linear-gradient(180deg, rgba(5,16,106,1) 51%, rgba(60,90,255,1) 100%)',
     '@media (max-width:450px)': {
       padding: '2rem',
     },
@@ -23,10 +21,6 @@ const useStyles = makeStyles(theme => ({
     },
   },
   form: {
-    // top: '50%',
-    // left: '50%',
-    // transform: 'translate(-50%, -50%)',
-    // position: 'absolute',
     color: 'white',
     textAlign: 'center',
   },
