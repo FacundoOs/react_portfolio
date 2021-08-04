@@ -3,7 +3,7 @@ export const projectData = [
     id: 1,
     name: 'Data Warehouse',
     image:
-      'https://user-images.githubusercontent.com/68663401/126680832-76a138cf-7a6c-4107-b403-c9d3937f48d4.png',
+      'https://user-images.githubusercontent.com/68663401/128265365-945a03bf-840c-4d76-ae86-81b4b2a63ef3.png',
     description:
       'App that allows a Marketing company to manage all the contacts of its clients. Built with JavaScript, Node, Express, MongoDB, HTML and SaaS',
     link: '',
@@ -13,7 +13,7 @@ export const projectData = [
     id: 2,
     name: 'Healt Integrator web site',
     image:
-      'https://user-images.githubusercontent.com/68663401/126683298-6e12e14a-9f45-4a9c-adbb-1e668f9fb0c5.png',
+      'https://user-images.githubusercontent.com/68663401/128265669-a29b9d89-365d-4a6f-a740-15e9c39f80ec.jpg',
     description:
       'New website of the Health Integrator company. Built with Full Stack Ruby on Rails, Strapi CMS, Stimulus and Tailwind.',
     link: 'https://www.healthintegrator.se/',
@@ -33,7 +33,7 @@ export const projectData = [
     id: 4,
     name: 'Matchup mobile app',
     image:
-      'https://user-images.githubusercontent.com/68663401/103628536-79354400-4f3f-11eb-9231-67ba001768be.png',
+      'https://user-images.githubusercontent.com/68663401/128265814-21ab8503-37ef-4b3a-9db0-b1a453ad2414.jpg',
     description:
       'Final project at Craft Academy. Mobile application where a client can offer development jobs and developers can apply. Developers are filtered by scores and level obtained by their work',
     link: '',
