@@ -5,6 +5,9 @@ const useStyle = makeStyles(({ breakpoints }) => ({
     justifyContent: 'center',
     background:
       'linear-gradient(180deg, rgba(0,0,0,1) 8%, rgba(60,90,255,1) 100%)',
+    '& .MuiCard-root': {
+      overflow: 'visible!important',
+    },
   },
   card: {
     margin: '5rem 1rem',
