@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
   Card,
   CardContent,
@@ -12,11 +12,12 @@ import DividerSection from '../../components/DividerShared/Divider.jsx'
 
 const About = () => {
   const classes = useStyle()
+
   return (
     <div>
       <DividerSection />
       <Grid container className={classes.root}>
-        <Card className={classes.card} id="about">
+        <Card className={classes.card} id="about" data-aos="fade-left">
           <CardMedia
             className={classes.media}
             image={photo}
@@ -42,15 +43,12 @@ const About = () => {
               </Typography>
               <Typography className={classes.aboutDescription}>
                 Working in an IoT company piqued my interest in code. Having
-                used C ++ to program microcontrollers made it easier for me to
+                used C++ to program microcontrollers made it easier for me to
                 enter this new world.
               </Typography>
               <Typography className={classes.aboutDescription}>
-                {/* <a href="https://craftacademy.se/english/" target="_blank">
-                Craft Academy
-              </a>{' '} */}
-                Every day is a challenge. I love spending hours programming and
-                learning new technologies.
+                I enjoy spending hours programming and learning new
+                technologies. UX lover ❤️ .
               </Typography>
               <Typography className={classes.aboutDescription}>
                 Driven and permanently curious.

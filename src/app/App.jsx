@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Home from '../views/Home/Home.jsx'
 import About from '../views/About/About.jsx'
 import Navbar from '../components/Navbar/Navbar.jsx'
@@ -12,9 +12,16 @@ import native from '../assets/particles-images/native.png'
 import react from '../assets/particles-images/react.png'
 import FooterIcons from '../components/Navbar/FooterIcons.jsx'
 import useStyles from './appStyle'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const App = () => {
   const classes = useStyles()
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
   return (
     <>
       <Navbar />

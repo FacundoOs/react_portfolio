@@ -49,6 +49,7 @@ const useStyle = makeStyles(({ breakpoints }) => ({
     padding: '4px',
     marginBottom: '.3rem',
     fontSize: 26,
+    overflow: 'visible!important',
     [breakpoints.down('md')]: {
       fontSize: 14,
       marginBottom: 0,
