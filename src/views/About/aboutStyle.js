@@ -47,7 +47,7 @@ const useStyle = makeStyles(({ breakpoints }) => ({
     color: 'white',
     borderRadius: '0.8rem',
     padding: '4px',
-    marginBottom: '2rem',
+    marginBottom: '.3rem',
     fontSize: 26,
     [breakpoints.down('md')]: {
       fontSize: 14,
@@ -56,16 +56,19 @@ const useStyle = makeStyles(({ breakpoints }) => ({
   },
   aboutTitle: {
     fontSize: 23,
-    paddingBottom: '0.6rem',
+    paddingBottom: '0.4rem',
     [breakpoints.down('xs')]: {
       fontSize: 16,
       paddingBottom: 0,
     },
   },
+  aboutDescriptionRoot: {
+    paddingTop: 0,
+  },
   aboutDescription: {
     fontSize: 18,
     paddingBottom: '0.6rem',
-    textAlign: 'justify',
+    // textAlign: 'justify',
     letterSpacing: 'normal',
     [breakpoints.down('xs')]: {
       fontSize: 14,

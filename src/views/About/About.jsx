@@ -26,9 +26,9 @@ const About = () => {
             <Typography variant="h5" className={classes.about}>
               About me
             </Typography>
-            <CardContent id="aboutTitle" className={classes.titleDescription}>
+            <CardContent id="aboutTitle">
               <Typography className={classes.aboutTitle}>
-                Where there are obstacles and problems, I see opportunities.
+                “First, solve the problem. Then, write the code.” – John Johnson
               </Typography>
             </CardContent>
             <CardContent
@@ -36,18 +36,21 @@ const About = () => {
               className={classes.aboutDescriptionRoot}
             >
               <Typography className={classes.aboutDescription}>
-                Hello. I am Facundo, a software developer with good knowledge of
-                frontend and backend techniques. UX lover. I have 2 passions in
-                this life: traveling and programming ❤️.
+                Hello. I am Facundo, an Argentine based in Stockholm. That after
+                11 years as an electronic technician, decides to take a leap in
+                his career to enter the fascinating world of programming.
               </Typography>
               <Typography className={classes.aboutDescription}>
-                Based in Stockholm, where the day and the night can be infinite.
+                Working in an IoT company piqued my interest in code. Having
+                used C ++ to program microcontrollers made it easier for me to
+                enter this new world.
               </Typography>
               <Typography className={classes.aboutDescription}>
                 {/* <a href="https://craftacademy.se/english/" target="_blank">
                 Craft Academy
               </a>{' '} */}
-                I love spending hours programming and learning new technologies.
+                Every day is a challenge. I love spending hours programming and
+                learning new technologies.
               </Typography>
               <Typography className={classes.aboutDescription}>
                 Driven and permanently curious.
