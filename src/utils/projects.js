@@ -1,9 +1,17 @@
+import dataWarehouse from '../assets/projects-images/data-warehouse.jpg'
+import healthIntegrator from '../assets/projects-images/health-integrator.jpg'
+import develup from '../assets/projects-images/develup.jpg'
+import general from '../assets/projects-images/general.jpeg'
+import goodMorning from '../assets/projects-images/good-morning.png'
+import firstWebsite from '../assets/projects-images/first-website.png'
+import amazonClone from '../assets/projects-images/amazon-clone.jpg'
+import portfolio from '../assets/projects-images/portfolio.jpg'
+
 export const projectData = [
   {
     id: 1,
     name: 'Data Warehouse',
-    image:
-      'https://user-images.githubusercontent.com/68663401/126680832-76a138cf-7a6c-4107-b403-c9d3937f48d4.png',
+    image: dataWarehouse,
     description:
       'App that allows a Marketing company to manage all the contacts of its clients. Built with JavaScript, Node, Express, MongoDB, HTML and SaaS',
     link: '',
@@ -12,8 +20,7 @@ export const projectData = [
   {
     id: 2,
     name: 'Healt Integrator web site',
-    image:
-      'https://user-images.githubusercontent.com/68663401/126683298-6e12e14a-9f45-4a9c-adbb-1e668f9fb0c5.png',
+    image: healthIntegrator,
     description:
       'New website of the Health Integrator company. Built with Full Stack Ruby on Rails, Strapi CMS, Stimulus and Tailwind.',
     link: 'https://www.healthintegrator.se/',
@@ -22,8 +29,7 @@ export const projectData = [
   {
     id: 3,
     name: 'Delilah Resto',
-    image:
-      'https://images.unsplash.com/photo-1556438064-2d7646166914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+    image: general,
     description:
       'This API allows you to create an online ordering system for a restaurant. Built with Node, Express and MySQL. Use jsonwebtoken for authentication',
     link: '',
@@ -32,8 +38,7 @@ export const projectData = [
   {
     id: 4,
     name: 'Matchup mobile app',
-    image:
-      'https://user-images.githubusercontent.com/68663401/103628536-79354400-4f3f-11eb-9231-67ba001768be.png',
+    image: develup,
     description:
       'Final project at Craft Academy. Mobile application where a client can offer development jobs and developers can apply. Developers are filtered by scores and level obtained by their work',
     link: '',
@@ -42,8 +47,7 @@ export const projectData = [
   {
     id: 5,
     name: 'Digital newspaper',
-    image:
-      'https://d33wubrfki0l68.cloudfront.net/5fdccf4020225f0008d776bd/screenshot.png',
+    image: goodMorning,
     description:
       'This project includes 3 front-end (client, administrator and mobile) built in React, React native and Ruby on Rails for the back-end',
     link: 'https://goodmorningnews.netlify.app/',
@@ -52,8 +56,7 @@ export const projectData = [
   {
     id: 6,
     name: 'My First Website',
-    image:
-      'https://d33wubrfki0l68.cloudfront.net/5fc770b58cb0056e0c27a0c7/screenshot.png',
+    image: firstWebsite,
     description:
       'This was my first project studying in Acamica. A podcast with pure HTML and CSS',
     link: 'https://podcastfacundo.netlify.app',
@@ -62,8 +65,7 @@ export const projectData = [
   {
     id: 7,
     name: 'Amazon Clone',
-    image:
-      'https://user-images.githubusercontent.com/68663401/103627438-e942ca80-4f3d-11eb-8c62-13aae8971e92.png',
+    image: amazonClone,
     description:
       'Amazon clone with firebase authentication and payment with Stripe',
     link: 'https://clone-1b668.web.app/',
@@ -72,10 +74,9 @@ export const projectData = [
   {
     id: 8,
     name: 'Portfolio',
-    image:
-      'https://d33wubrfki0l68.cloudfront.net/5fc0cfcb696e2500074a76b1/screenshot.png',
+    image: portfolio,
     description: 'Built with React v17.0.2',
-    link: 'https://facundoosoresportfolio.netlify.app/',
+    link: 'https://facundoosores.com/',
     github: 'https://github.com/FacundoOs/react_portfolio',
   },
 ]

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --mode development",
+    "bundle-report": "webpack-bundle-analyzer --port 4200 compilation-stats.json",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.js\"",
     "build": "webpack --mode production",
@@ -46,6 +47,7 @@
     "prettier": "^2.2.0",
     "style-loader": "^1.2.1",
     "webpack": "4.44.1",
+    "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "3.11.0"
   }

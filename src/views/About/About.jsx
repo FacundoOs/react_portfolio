@@ -6,7 +6,7 @@ import {
   Grid,
   Typography,
 } from '@material-ui/core'
-import photo from '../../assets/about-image/profile.jpeg'
+import photo from '../../assets/about-image/profile.jpg'
 import useStyle from './aboutStyle'
 import DividerSection from '../../components/DividerShared/Divider.jsx'
 

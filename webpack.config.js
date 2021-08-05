@@ -1,9 +1,11 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin
 
 module.exports = {
   entry: './src/index.js',
-  devtool: 'inline-source-map',
+  devtool: '',
   module: {
     rules: [
       {
@@ -43,5 +45,21 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve('./index.html'),
     }),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static',
+      openAnalyzer: true,
+    }),
   ],
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules\/(react|react-dom|react-router)[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+          reuseExistingChunk: true,
+        },
+      },
+    },
+  },
 }
