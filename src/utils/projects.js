@@ -3,9 +3,9 @@ import healthIntegrator from '../assets/projects-images/health-integrator.jpg'
 import develup from '../assets/projects-images/develup.jpg'
 import general from '../assets/projects-images/general.jpeg'
 import goodMorning from '../assets/projects-images/good-morning.png'
-import firstWebsite from '../assets/projects-images/first-website.png'
 import amazonClone from '../assets/projects-images/amazon-clone.jpg'
 import portfolio from '../assets/projects-images/portfolio.jpg'
+import instagramClone from '../assets/projects-images/instagram-clone.jpg'
 
 export const projectData = [
   {
@@ -55,12 +55,11 @@ export const projectData = [
   },
   {
     id: 6,
-    name: 'My First Website',
-    image: firstWebsite,
-    description:
-      'This was my first project studying in Acamica. A podcast with pure HTML and CSS',
-    link: 'https://podcastfacundo.netlify.app',
-    github: '',
+    name: 'Instagram Clone',
+    image: instagramClone,
+    description: 'Instagram clone with React Native - in progress',
+    link: '',
+    github: 'https://github.com/FacundoOs/Instagram_clone_react_native',
   },
   {
     id: 7,
