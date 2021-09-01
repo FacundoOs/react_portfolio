@@ -15,7 +15,7 @@ export const projectData = [
     description:
       'App that allows a Marketing company to manage all the contacts of its clients. Built with JavaScript, Node, Express, MongoDB, HTML and SaaS',
     link: '',
-    github: 'https://github.com/FacundoOs/rock_paper_scissors_react',
+    github: 'https://github.com/FacundoOs/data_warehouse',
   },
   {
     id: 2,
