@@ -1,4 +1,4 @@
-import { makeStyles } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles'
 import useStyle from '../About/aboutStyle'
 
 const useStyles = makeStyles(({ breakpoints }) => ({

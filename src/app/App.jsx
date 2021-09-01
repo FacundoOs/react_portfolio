@@ -4,7 +4,7 @@ import About from '../views/About/About.jsx'
 import Navbar from '../components/Navbar/Navbar.jsx'
 import Particles from 'react-particles-js'
 import ProjectsList from '../views/Projects/ProjectsList.jsx'
-import Contact from '../views/Contact/Contact.jsx'
+// import Contact from '../views/Contact/Contact.jsx'
 import { Switch, Route } from 'react-router-dom'
 import node from '../assets/particles-images/node.png'
 import rails from '../assets/particles-images/rails.png'
@@ -32,7 +32,7 @@ const App = () => {
       <Home />
       <About />
       <ProjectsList />
-      <Contact />
+      {/* <Contact /> */}
       {/* <Switch>
         <Route exact path="/projects" component={ProjectsList}></Route>
         <Route exact path="/" component={Home}></Route>
