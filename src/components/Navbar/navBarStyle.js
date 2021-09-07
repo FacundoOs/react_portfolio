@@ -15,6 +15,7 @@ const useStyles = makeStyles(theme => ({
   appBar: {
     backgroundColor: 'transparent',
     transition: '1s',
+    boxShadow: 'none!important',
   },
   activeNavbar: {
     backgroundColor: '#514A4A',

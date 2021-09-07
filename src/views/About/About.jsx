@@ -15,7 +15,6 @@ const About = () => {
 
   return (
     <div>
-      <DividerSection />
       <Grid container className={classes.root}>
         <Card className={classes.card} id="about" data-aos="fade-left">
           <CardMedia
