@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles'
-import profile from '../../assets/home-image/profile.jpg'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -31,11 +30,8 @@ const useStyles = makeStyles(theme => ({
     transform: 'translate3d(-50%, 0, 0)',
   },
   tri1: {
-    clipPath: 'polygon(0 0, 100% 0, 50% 100%)',
-    webkitClickPath: 'polygon(0 0, 100% 0, 50% 100%)',
     width: '90vh',
     height: '72vh',
-    background: `url(${profile}) no-repeat  `,
     position: 'absolute',
     backgroundSize: 'cover',
     top: '17vh',
@@ -44,26 +40,20 @@ const useStyles = makeStyles(theme => ({
     opacity: 0.8,
   },
   tri: {
-    clipPath:
-      'polygon(50% 0, 0% 100%, 9% 100%, 50% 17%, 50% 17%, 85% 91%, 13% 91%, 0 100%, 100% 100%, 50% 0)',
-    webkitClipPath:
-      'polygon(50% 0, 0% 100%, 9% 100%, 50% 17%, 50% 17%, 85% 91%, 13% 91%, 0 100%, 100% 100%, 50% 0)',
-    width: '80vh',
-    height: '70vh',
+    left: '50%',
+    backgroundSize: 'cover',
     position: 'absolute',
     transform: 'translate3d(-50%, 0, 0)',
   },
   tri2: {
-    background:
-      'url(https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) no-repeat center center',
-    backgroundSize: 'cover',
     top: '11vh',
-    left: '50%',
+    width: '91vh',
+    height: '93vh',
   },
   tri3: {
-    background: 'rgba(0, 113, 110, 0.2)',
     top: '26vh',
-    left: '50%',
+    width: '80vh',
+    height: '70vh',
   },
   strip: {
     position: 'absolute',
