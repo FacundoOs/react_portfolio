@@ -32,6 +32,7 @@ const useStyles = makeStyles(theme => ({
   },
   tri1: {
     clipPath: 'polygon(0 0, 100% 0, 50% 100%)',
+    webkitClickPath: 'polygon(0 0, 100% 0, 50% 100%)',
     width: '90vh',
     height: '72vh',
     background: `url(${profile}) no-repeat  `,
@@ -44,6 +45,8 @@ const useStyles = makeStyles(theme => ({
   },
   tri: {
     clipPath:
+      'polygon(50% 0, 0% 100%, 9% 100%, 50% 17%, 50% 17%, 85% 91%, 13% 91%, 0 100%, 100% 100%, 50% 0)',
+    webkitClipPath:
       'polygon(50% 0, 0% 100%, 9% 100%, 50% 17%, 50% 17%, 85% 91%, 13% 91%, 0 100%, 100% 100%, 50% 0)',
     width: '80vh',
     height: '70vh',
