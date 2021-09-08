@@ -3,15 +3,15 @@ import useStyle from '../About/aboutStyle'
 
 const useStyles = makeStyles(({ breakpoints }) => ({
   root: {
-    background:
-      'linear-gradient(0deg, rgba(5,16,106,1) 51%, rgba(60,90,255,1) 100%)',
+    background: '#fff',
   },
   title: {
-    paddingLeft: '7rem',
-    fontSize: '2rem',
-    color: '#ffff',
+    fontSize: '3rem',
+    color: '#000',
+    textAlign: 'center!important',
+    paddingTop: '1rem',
     [breakpoints.down('sm')]: {
-      paddingLeft: '1rem',
+      fontSize: '2.5rem',
     },
   },
   cards: {

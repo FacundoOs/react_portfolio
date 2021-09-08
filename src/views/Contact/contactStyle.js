@@ -3,8 +3,7 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyles = makeStyles(theme => ({
   background: {
     paddingTop: '4rem',
-    background:
-      'linear-gradient(180deg, rgba(5,16,106,1) 51%, rgba(0,0,0,1) 100%)',
+    background: 'rgb(64 64 64)',
     '@media (max-width:450px)': {
       paddingTop: '1rem',
     },

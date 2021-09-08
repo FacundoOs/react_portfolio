@@ -36,7 +36,6 @@ const Contact = () => {
 
   return (
     <div className={classes.background} id="contact">
-      <DividerSection />
       <Grid container justifyContent="center" className={classes.root}>
         <Box component="form" className={classes.form} onSubmit={sendEmail}>
           <Typography variant="h2" className={classes.title}>

@@ -3,16 +3,16 @@ import { projectData } from '../../utils/projects'
 import PostCardDemo from './ProjectCard.jsx'
 import { Grid, makeStyles, Typography } from '@material-ui/core'
 import useStyles from './projectsListStyle'
-import DividerSection from '../../components/DividerShared/Divider.jsx'
 
 const ProjectsList = () => {
   const classes = useStyles()
   return (
     <>
       <Grid className={classes.root} id="portfolio">
-        <DividerSection />
-        <Typography className={classes.title}>Portfolio</Typography>
-        <Grid container spacing={3} className={classes.cards}>
+        <Typography id="PortfolioTitle" className={classes.title}>
+          Portfolio
+        </Typography>
+        <Grid container spacing={6} className={classes.cards}>
           {projectData.map(projects => {
             return (
               <Grid

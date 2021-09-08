@@ -3,8 +3,7 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyle = makeStyles(({ breakpoints }) => ({
   root: {
     justifyContent: 'center',
-    background:
-      'linear-gradient(180deg, rgba(0,0,0,1) 8%, rgba(60,90,255,1) 100%)',
+    background: 'rgba(248, 248, 250, 1)',
     '& .MuiCard-root': {
       overflow: 'visible!important',
     },
@@ -19,13 +18,17 @@ const useStyle = makeStyles(({ breakpoints }) => ({
     position: 'relative',
     width: '90%',
     transition: '0.8s',
+    boxShadow: 'rgba(0, 0, 0, 0.56) 0px 22px 70px 4px',
     [breakpoints.up('md')]: {
       flexDirection: 'row',
       paddingTop: '2rem',
       paddingBottom: '1rem',
       marginLeft: '3rem',
       margintRigth: '3rem',
-      width: '70%',
+      width: '75%',
+    },
+    [breakpoints.up('xl')]: {
+      width: '60%',
     },
   },
   media: {
@@ -72,7 +75,6 @@ const useStyle = makeStyles(({ breakpoints }) => ({
   aboutDescription: {
     fontSize: 18,
     paddingBottom: '0.6rem',
-    // textAlign: 'justify',
     letterSpacing: 'normal',
     [breakpoints.down('xs')]: {
       fontSize: 14,
