@@ -1,6 +1,6 @@
 import React from 'react'
 import { projectData } from '../../utils/projects'
-import PostCardDemo from './ProjectCard.jsx'
+import ProjectCard from './ProjectCard.jsx'
 import { Grid, makeStyles, Typography } from '@material-ui/core'
 import useStyles from './projectsListStyle'
 
@@ -32,7 +32,7 @@ const ProjectsList = () => {
                 key={projects.id}
                 data-aos="zoom-in-up"
               >
-                <PostCardDemo projects={projects} />
+                <ProjectCard projects={projects} />
               </Grid>
             )
           })}

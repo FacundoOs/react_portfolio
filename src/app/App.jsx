@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Home from '../views/Home/Home.jsx'
 import About from '../views/About/About.jsx'
 import Navbar from '../components/Navbar/Navbar.jsx'
+import Skills from '../views/Skills/Skills.jsx'
 import ProjectsList from '../views/Projects/ProjectsList.jsx'
 import Contact from '../views/Contact/Contact.jsx'
 import { Switch, Route } from 'react-router-dom'
@@ -26,6 +27,7 @@ const App = () => {
       <Navbar />
       <Home />
       <About />
+      <Skills />
       <ProjectsList />
       <Contact />
       {/* <Switch>

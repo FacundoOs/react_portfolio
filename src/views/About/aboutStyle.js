@@ -3,13 +3,17 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyle = makeStyles(({ breakpoints }) => ({
   root: {
     justifyContent: 'center',
+    alignItems: 'center',
     background: 'rgba(248, 248, 250, 1)',
     '& .MuiCard-root': {
       overflow: 'visible!important',
     },
+    [breakpoints.up('sm')]: {
+      minHeight: '90vh',
+    },
   },
   card: {
-    margin: '5rem 1rem',
+    margin: '3rem 1rem',
     display: 'flex',
     borderRadius: '1rem',
     flexDirection: 'column',
