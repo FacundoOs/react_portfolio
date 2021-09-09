@@ -8,15 +8,14 @@ import {
 } from '@material-ui/core'
 import photo from '../../assets/about-image/profile.jpg'
 import useStyle from './aboutStyle'
-import DividerSection from '../../components/DividerShared/Divider.jsx'
 
 const About = () => {
   const classes = useStyle()
 
   return (
     <div>
-      <Grid container className={classes.root}>
-        <Card className={classes.card} id="about" data-aos="fade-left">
+      <Grid container className={classes.root} id="about">
+        <Card className={classes.card} data-aos="fade-left">
           <CardMedia
             className={classes.media}
             image={photo}
@@ -36,18 +35,17 @@ const About = () => {
               className={classes.aboutDescriptionRoot}
             >
               <Typography className={classes.aboutDescription}>
-                Hello. I am Facundo, an Argentine based in Stockholm. That after
-                11 years as an electronic technician, decides to take a leap in
-                his career to enter the fascinating world of programming.
+                Hello!! I am Facundo, an Argentine based in Stockholm.
               </Typography>
               <Typography className={classes.aboutDescription}>
-                Working in an IoT company piqued my interest in code. Having
-                used C++ to program microcontrollers made it easier for me to
-                enter this new world.
+                I have serious passion for UI effects, animations and creating
+                intuitive, dynamic user experiences.
               </Typography>
               <Typography className={classes.aboutDescription}>
-                I enjoy spending hours programming and learning new
-                technologies. UX lover ❤️ .
+                I'm a web developer with a focus on the MERN stack, but still
+                exploring other technologies and frameworks that catch my
+                interest! if you're looking for a developer to add to your team,
+                I'd love to hear from you! ❤️ .
               </Typography>
               <Typography className={classes.aboutDescription}>
                 Driven and permanently curious.

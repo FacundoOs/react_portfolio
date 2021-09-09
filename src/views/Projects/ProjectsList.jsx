@@ -9,9 +9,17 @@ const ProjectsList = () => {
   return (
     <>
       <Grid className={classes.root} id="portfolio">
-        <Typography id="PortfolioTitle" className={classes.title}>
-          Portfolio
-        </Typography>
+        <div id="PortfolioTitle" className={classes.title}>
+          <span>P</span>
+          <span>O</span>
+          <span>R</span>
+          <span>T</span>
+          <span>F</span>
+          <span>O</span>
+          <span>L</span>
+          <span>I</span>
+          <span>O</span>
+        </div>
         <Grid container spacing={6} className={classes.cards}>
           {projectData.map(projects => {
             return (

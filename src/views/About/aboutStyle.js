@@ -49,7 +49,8 @@ const useStyle = makeStyles(({ breakpoints }) => ({
   },
   about: {
     display: 'inline-block',
-    background: '#222',
+    background:
+      'linear-gradient(277deg, rgba(152,50,244,1) 33%, rgba(210,55,208,1) 92%)',
     color: 'white',
     borderRadius: '0.8rem',
     padding: '4px',

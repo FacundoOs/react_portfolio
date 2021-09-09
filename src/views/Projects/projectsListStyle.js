@@ -4,14 +4,34 @@ import useStyle from '../About/aboutStyle'
 const useStyles = makeStyles(({ breakpoints }) => ({
   root: {
     background: '#fff',
+    paddingTop: '1.5rem',
   },
   title: {
-    fontSize: '3rem',
-    color: '#000',
-    textAlign: 'center!important',
-    paddingTop: '1rem',
-    [breakpoints.down('sm')]: {
-      fontSize: '2.5rem',
+    display: 'flex',
+    justifyContent: 'center',
+    textAlign: 'center',
+    fontSize: '5rem',
+    paddingTop: '2rem',
+    transition: 'transform .3s ease-in-out',
+    '& span': {
+      borderRadius: '5px 0 0 5px',
+      '&:nth-child(odd)': {
+        transform: 'skewY(15deg)',
+        color: '#392020',
+        background:
+          'linear-gradient( 277deg, rgb(255 255 255) 33%, rgb(59 56 59) 92%)',
+      },
+      '&:nth-child(even)': {
+        transform: 'skewY(-15deg)',
+        backgroundColor: '#dfdede',
+        color: '#a6a6a6',
+      },
+      '&:hover': {
+        transform: 'skewY(0deg)',
+      },
+    },
+    [breakpoints.down('xs')]: {
+      fontSize: '3rem',
     },
   },
   cards: {
