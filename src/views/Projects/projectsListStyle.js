@@ -4,11 +4,10 @@ import useStyle from '../About/aboutStyle'
 const useStyles = makeStyles(({ breakpoints }) => ({
   root: {
     background: 'rgba(248, 248, 250, 1)',
-    paddingTop: '1.5rem',
+    padding: '1.5rem 0',
   },
   title: {
     display: 'flex',
-    // justifyContent: 'center',
     textAlign: 'center',
     fontSize: '5rem',
     paddingTop: '2rem',
@@ -44,7 +43,7 @@ const useStyles = makeStyles(({ breakpoints }) => ({
   },
   cards: {
     width: '100%',
-    padding: '1rem 7rem',
+    padding: '3rem 7rem',
     margin: 0,
     justifyContent: 'center',
     [breakpoints.down('sm')]: {

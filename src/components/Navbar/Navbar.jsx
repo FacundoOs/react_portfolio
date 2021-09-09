@@ -18,6 +18,7 @@ import {
   Apps,
   Menu,
   AssignmentInd,
+  Assessment,
   ContactMail,
 } from '@material-ui/icons'
 import avatar from '../../assets/home-image/avatar.png'
@@ -45,6 +46,11 @@ const Navbar = props => {
       listIcon: <AssignmentInd />,
       listText: 'About',
       listPath: 'about',
+    },
+    {
+      listIcon: <Assessment />,
+      listText: 'Skills',
+      listPath: 'skills',
     },
     {
       listIcon: <Apps />,

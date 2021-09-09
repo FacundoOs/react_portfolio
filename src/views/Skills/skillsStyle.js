@@ -5,7 +5,7 @@ const useStyles = makeStyles(({ breakpoints }) => ({
     width: '100vw',
     minHeight: '90vh',
     backgroundColor: '#fff',
-    paddingTop: '2rem',
+    padding: '2rem 0 2.5rem 0',
   },
   title: {
     fontSize: '5rem',
@@ -34,6 +34,35 @@ const useStyles = makeStyles(({ breakpoints }) => ({
       [breakpoints.down('xs')]: {
         fontSize: '1.5rem',
       },
+    },
+  },
+  subtitle: {
+    fontSize: '3rem',
+    paddingLeft: '1rem',
+    [breakpoints.down('xs')]: {
+      fontSize: '2rem',
+    },
+  },
+  skillsGrid: {
+    justifyContent: 'flex-start',
+    width: '100%',
+    padding: '2rem',
+    margin: 0,
+    display: 'flex',
+    [breakpoints.down('xs')]: {
+      paddingTop: '1rem',
+    },
+  },
+  skillsProgress: {
+    justifyContent: 'flex-start',
+    width: '100%',
+    paddingLeft: '1.5rem',
+    paddingBottom: '1rem',
+
+    margin: 0,
+    [breakpoints.down('xs')]: {
+      paddingTop: '1rem',
+      padding: '0',
     },
   },
 }))
