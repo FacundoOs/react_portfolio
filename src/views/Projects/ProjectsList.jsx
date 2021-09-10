@@ -1,18 +1,26 @@
 import React from 'react'
 import { projectData } from '../../utils/projects'
-import PostCardDemo from './ProjectCard.jsx'
+import ProjectCard from './ProjectCard.jsx'
 import { Grid, makeStyles, Typography } from '@material-ui/core'
 import useStyles from './projectsListStyle'
-import DividerSection from '../../components/DividerShared/Divider.jsx'
 
 const ProjectsList = () => {
   const classes = useStyles()
   return (
     <>
       <Grid className={classes.root} id="portfolio">
-        <DividerSection />
-        <Typography className={classes.title}>Portfolio</Typography>
-        <Grid container spacing={3} className={classes.cards}>
+        <div className={classes.title}>
+          <span>P</span>
+          <span>O</span>
+          <span>R</span>
+          <span>T</span>
+          <span>F</span>
+          <span>O</span>
+          <span>L</span>
+          <span>I</span>
+          <span>O</span>
+        </div>
+        <Grid container spacing={6} className={classes.cards}>
           {projectData.map(projects => {
             return (
               <Grid
@@ -24,7 +32,7 @@ const ProjectsList = () => {
                 key={projects.id}
                 data-aos="zoom-in-up"
               >
-                <PostCardDemo projects={projects} />
+                <ProjectCard projects={projects} />
               </Grid>
             )
           })}

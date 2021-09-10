@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Home from '../views/Home/Home.jsx'
 import About from '../views/About/About.jsx'
 import Navbar from '../components/Navbar/Navbar.jsx'
-import Particles from 'react-particles-js'
+import Skills from '../views/Skills/Skills.jsx'
 import ProjectsList from '../views/Projects/ProjectsList.jsx'
 import Contact from '../views/Contact/Contact.jsx'
 import { Switch, Route } from 'react-router-dom'
@@ -25,12 +25,9 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Particles
-        canvasClassName={classes.particlesCanva}
-        params={particlesParams}
-      />
       <Home />
       <About />
+      <Skills />
       <ProjectsList />
       <Contact />
       {/* <Switch>

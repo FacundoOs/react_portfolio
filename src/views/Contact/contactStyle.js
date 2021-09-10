@@ -2,9 +2,10 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles(theme => ({
   background: {
-    paddingTop: '4rem',
-    background:
-      'linear-gradient(180deg, rgba(5,16,106,1) 51%, rgba(0,0,0,1) 100%)',
+    display: 'flex',
+    alignItems: 'center',
+    background: '#000',
+    minHeight: '90vh',
     '@media (max-width:450px)': {
       paddingTop: '1rem',
     },
@@ -16,16 +17,17 @@ const useStyles = makeStyles(theme => ({
     },
   },
   title: {
+    fontSize: '3.75rem',
     '@media (max-width:450px)': {
       fontSize: '1.5rem',
     },
   },
   form: {
-    color: 'white',
+    color: '#fff',
     textAlign: 'center',
   },
   input: {
-    color: 'white',
+    color: '#fff',
   },
   button: {
     marginTop: '1.5rem',

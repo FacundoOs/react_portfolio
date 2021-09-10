@@ -18,6 +18,7 @@ import {
   Apps,
   Menu,
   AssignmentInd,
+  Assessment,
   ContactMail,
 } from '@material-ui/icons'
 import avatar from '../../assets/home-image/avatar.png'
@@ -47,6 +48,11 @@ const Navbar = props => {
       listPath: 'about',
     },
     {
+      listIcon: <Assessment />,
+      listText: 'Skills',
+      listPath: 'skills',
+    },
+    {
       listIcon: <Apps />,
       listText: 'Portfolio',
       listPath: 'portfolio',
@@ -74,7 +80,7 @@ const Navbar = props => {
     >
       <Avatar className={classes.avatar} src={avatar} alt="avatar-picture" />
       <Divider />
-      <List className={classes.drawerSections} id="PortfolioTitle">
+      <List className={classes.drawerSections}>
         {menuItems.map((listItem, key) => (
           <ListItem
             key={key}
@@ -132,9 +138,7 @@ const Navbar = props => {
             >
               <Menu />
             </IconButton>
-            <Grid id="PortfolioTitle" className={classes.sectionsGrid}>
-              {menuList()}
-            </Grid>
+            <Grid className={classes.sectionsGrid}>{menuList()}</Grid>
             <MobilRightMenuSlider
               anchor="left"
               open={state.right}
