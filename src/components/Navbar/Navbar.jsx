@@ -80,7 +80,7 @@ const Navbar = props => {
     >
       <Avatar className={classes.avatar} src={avatar} alt="avatar-picture" />
       <Divider />
-      <List className={classes.drawerSections} id="PortfolioTitle">
+      <List className={classes.drawerSections}>
         {menuItems.map((listItem, key) => (
           <ListItem
             key={key}
@@ -138,9 +138,7 @@ const Navbar = props => {
             >
               <Menu />
             </IconButton>
-            <Grid id="PortfolioTitle" className={classes.sectionsGrid}>
-              {menuList()}
-            </Grid>
+            <Grid className={classes.sectionsGrid}>{menuList()}</Grid>
             <MobilRightMenuSlider
               anchor="left"
               open={state.right}

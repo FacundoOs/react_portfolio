@@ -17,6 +17,7 @@ const useStyles = makeStyles(theme => ({
     },
   },
   title: {
+    fontSize: '3.75rem',
     '@media (max-width:450px)': {
       fontSize: '1.5rem',
     },

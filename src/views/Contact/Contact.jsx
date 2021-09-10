@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { makeStyles, withStyles } from '@material-ui/core/styles'
-import { Box, Button, Grid, Typography } from '@material-ui/core'
+import { Box, Button, Grid } from '@material-ui/core'
 import emailjs from 'emailjs-com'
 import useStyle from './contactStyle'
 import MyTextField from './textFieldStyle'
@@ -14,7 +14,7 @@ const Contact = () => {
     e.preventDefault()
     emailjs
       .sendForm(
-        'gmail',
+        'gmail_portfolio',
         'portfolio_contact',
         e.target,
         'user_CLlpYlJ5sKkXQ4MOclSOH'
@@ -38,9 +38,7 @@ const Contact = () => {
     <div className={classes.background} id="contact">
       <Grid container justifyContent="center" className={classes.root}>
         <Box component="form" className={classes.form} onSubmit={sendEmail}>
-          <Typography variant="h2" className={classes.title}>
-            Contact Me!
-          </Typography>
+          <h2 className={classes.title}>Contact Me!</h2>
           <MyTextField
             id="name"
             name="name"
@@ -49,6 +47,7 @@ const Contact = () => {
             variant="outlined"
             margin="dense"
             size="medium"
+            required
             InputProps={{
               className: classes.input,
             }}
@@ -56,11 +55,14 @@ const Contact = () => {
           <MyTextField
             id="email"
             name="email"
+            type="email"
+            pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
             fullWidth={true}
             label="Email"
             variant="outlined"
             margin="dense"
             size="medium"
+            required
             InputProps={{
               className: classes.input,
             }}
@@ -75,14 +77,20 @@ const Contact = () => {
             size="medium"
             multiline
             rows={5}
+            required
             InputProps={{
               className: classes.input,
             }}
           />
-          <Button className={classes.button} variant="outlined" type="submit">
+          <Button
+            className={classes.button}
+            variant="outlined"
+            type="submit"
+            id="montserrat"
+          >
             Send message
           </Button>
-          {message && <Typography>{message}</Typography>}
+          {message && <h2>{message}</h2>}
         </Box>
       </Grid>
     </div>

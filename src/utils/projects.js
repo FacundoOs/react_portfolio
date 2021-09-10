@@ -13,7 +13,7 @@ export const projectData = [
     name: 'Data Warehouse',
     image: dataWarehouse,
     description:
-      'App that allows a Marketing company to manage all the contacts of its clients. Built with JavaScript, Node, Express, MongoDB, HTML and SaaS',
+      'App that allows a Marketing company to manage all the contacts of its clients. JavaScript, Node, Express, MongoDB, HTML and SaaS',
     link: '',
     github: 'https://github.com/FacundoOs/data_warehouse',
   },
@@ -22,7 +22,7 @@ export const projectData = [
     name: 'Healt Integrator web site',
     image: healthIntegrator,
     description:
-      'New website of the Health Integrator company. Built with Full Stack Ruby on Rails, Strapi CMS, Stimulus and Tailwind.',
+      'New website of the Health Integrator company. Full Stack Ruby on Rails, Strapi CMS, Stimulus and Tailwind',
     link: 'https://www.healthintegrator.se/',
     github: '',
   },
@@ -31,7 +31,7 @@ export const projectData = [
     name: 'Delilah Resto',
     image: general,
     description:
-      'This API allows you to create an online ordering system for a restaurant. Built with Node, Express and MySQL. Use jsonwebtoken for authentication',
+      'API that allows to create an online food ordering system. Node, Express and MySQL',
     link: '',
     github: 'https://github.com/FacundoOs/delilah-resto',
   },
@@ -40,7 +40,7 @@ export const projectData = [
     name: 'Matchup mobile app',
     image: develup,
     description:
-      'Final project at Craft Academy. Mobile application where a client can offer development jobs and developers can apply. Developers are filtered by scores and level obtained by their work',
+      'Final project at Craft Academy. B2B Mobile application. React Native and Ruby on Rails',
     link: '',
     github: 'https://github.com/FacundoOs/develUp_mobile',
   },
@@ -49,7 +49,7 @@ export const projectData = [
     name: 'Digital newspaper',
     image: goodMorning,
     description:
-      'This project includes 3 front-end (client, administrator and mobile) built in React, React native and Ruby on Rails for the back-end',
+      'This project includes 3 front-end (client, administrator and mobile). React, React native and Ruby on Rails',
     link: 'https://goodmorningnews.netlify.app/',
     github: 'https://github.com/FacundoOs/client_user_good_morning_news',
   },
@@ -57,7 +57,7 @@ export const projectData = [
     id: 6,
     name: 'Instagram Clone',
     image: instagramClone,
-    description: 'Instagram clone with React Native - in progress',
+    description: 'React Native - in progress',
     link: '',
     github: 'https://github.com/FacundoOs/Instagram_clone_react_native',
   },
@@ -65,8 +65,7 @@ export const projectData = [
     id: 7,
     name: 'Amazon Clone',
     image: amazonClone,
-    description:
-      'Amazon clone with firebase authentication and payment with Stripe',
+    description: 'React, Firebase, Node and Stripe',
     link: 'https://clone-1b668.web.app/',
     github: 'https://github.com/FacundoOs/amazon-clone',
   },
@@ -74,7 +73,7 @@ export const projectData = [
     id: 8,
     name: 'Portfolio',
     image: portfolio,
-    description: 'Built with React v17.0.2',
+    description: 'UI/UX design with Figma. React ',
     link: 'https://facundoosores.com/',
     github: 'https://github.com/FacundoOs/react_portfolio',
   },

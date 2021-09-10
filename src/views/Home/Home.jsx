@@ -8,7 +8,7 @@ const Home = props => {
   const classes = useStyles()
 
   return (
-    <div className={classes.root} id="PortfolioTitle" id="home">
+    <div className={classes.root} id="home">
       <div className={classes.shape_contain}></div>
       <div className={`${classes.strip2} ${classes.strip}`}></div>
       <div>

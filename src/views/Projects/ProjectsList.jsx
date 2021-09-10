@@ -9,7 +9,7 @@ const ProjectsList = () => {
   return (
     <>
       <Grid className={classes.root} id="portfolio">
-        <div id="PortfolioTitle" className={classes.title}>
+        <div className={classes.title}>
           <span>P</span>
           <span>O</span>
           <span>R</span>

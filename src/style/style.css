@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   height: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #aboutTitle p {
@@ -16,18 +17,10 @@ body {
   font-family: 'Space Grotesk', sans-serif;
 }
 
-#PortfolioTitle {
+#montserrat {
   font-family: 'Montserrat', sans-serif;
 }
 
 a {
   text-decoration: none;
-}
-
-#homeName span {
-  font-family: 'Big Shoulders Stencil Display', cursive;
-}
-
-#homeString span {
-  font-family: 'Space Grotesk', sans-serif;
 }

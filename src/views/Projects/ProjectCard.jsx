@@ -14,10 +14,10 @@ const ProjectCard = ({ projects }) => {
           style={{ backgroundImage: `url(${projects.image})` }}
         ></div>
         <div className={classes.back}>
-          <p id="PortfolioTitle"> {projects.description}</p>
+          <p> {projects.description}</p>
         </div>
       </div>
-      <Box id="PortfolioTitle" px={1} pt={1}>
+      <Box px={1} pt={1}>
         {projects.name}
       </Box>
       <Box px={2} mt={-1}>

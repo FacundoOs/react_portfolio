@@ -38,13 +38,13 @@ const About = () => {
             </Typography>
             <Typography className={classes.aboutDescription}>
               I have serious passion for UI effects, animations and creating
-              intuitive, dynamic user experiences.
+              intuitive and dynamic user experiences.
             </Typography>
             <Typography className={classes.aboutDescription}>
               I'm a web developer with a focus on the MERN stack, but still
               exploring other technologies and frameworks that catch my
               interest! if you're looking for a developer to add to your team,
-              I'd love to hear from you! ❤️ .
+              I'd love to hear from you! ❤️
             </Typography>
             <Typography className={classes.aboutDescription}>
               Driven and permanently curious.

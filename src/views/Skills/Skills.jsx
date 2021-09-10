@@ -11,11 +11,9 @@ const skillsStyle = () => {
 
   return (
     <Grid className={classes.root} id="skills">
-      <div className={classes.title} id="PortfolioTitle">
-        Knowledge
-      </div>
+      <div className={classes.title}>Knowledge</div>
 
-      <Grid container className={classes.knowledgeGrid} id="PortfolioTitle">
+      <Grid container className={classes.knowledgeGrid}>
         {knowledgeData.map(knowledge => {
           return (
             <Grid
@@ -32,10 +30,8 @@ const skillsStyle = () => {
         })}
       </Grid>
 
-      <div className={classes.subtitle} id="PortfolioTitle">
-        My skills
-      </div>
-      <Grid container className={classes.skillsGrid} id="PortfolioTitle">
+      <div className={classes.subtitle}>My skills</div>
+      <Grid container className={classes.skillsGrid}>
         {skills.map(skillsData => {
           return (
             <Grid
