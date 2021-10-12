@@ -26,9 +26,6 @@ const useStyles = makeStyles(theme => ({
     color: '#fff',
     textAlign: 'center',
   },
-  input: {
-    color: '#fff',
-  },
   button: {
     marginTop: '1.5rem',
     color: '#F1810E',

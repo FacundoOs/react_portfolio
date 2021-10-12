@@ -15,6 +15,10 @@ const MyTextField = withStyles({
     '& .MuiInput-underline:after': {
       borderBottomColor: 'red',
     },
+    '& .MuiInputBase-input': {
+      fontFamily: 'Montserrat, SansSerif',
+      color: '#fff!important'
+    },
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
         borderColor: '#F1810E',
